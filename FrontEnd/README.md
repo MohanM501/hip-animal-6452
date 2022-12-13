@@ -7,3 +7,5 @@ Project Name - hip-animal-6452
 3. Priyanka Dubey - Backend side, furniture
 4. Rohit kumar - navbar, footer, and landing page
 5. Mohan - Cart page, order details , payment page 
+
+
