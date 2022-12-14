@@ -7,7 +7,6 @@ const MainRoute = () => {
         <Routes>
             {/* <Route path="/" element={<landingpage/>}></Route> */}
             {/* use routes here */}
-            <Route path="/" element={<h1>hi welcome</h1>}/>
             <Route path="/:city/:applianceType/:productname" element={<ProductDetails/>}/>
         </Routes>
     </div>
