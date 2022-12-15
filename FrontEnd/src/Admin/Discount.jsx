@@ -12,10 +12,35 @@ import {
   Input,
   useDisclosure} from '@chakra-ui/react';
   import { AiOutlineSearch } from "react-icons/ai";
+import { useState } from 'react';
+import {useDispatch,useSelector} from "react-redux"
+import {getCoupon,postCoupon} from "../Redux/CouponReducer/action"
+import { useEffect } from 'react';
+
+  const initStata={
+    code:"",
+    discriptions:"",
+    amount:""
+  }
 
 function Discount() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const [formData,setFormData]=useState(initStata)
+  const dispatch=useDispatch()
 
+
+  useEffect(()=>{
+    dispatch(getCoupon)
+  },[])
+
+  const handleChange=(e)=>{
+    const {name,value}=e.target;
+    setFormData({...formData,[name]:value})
+  }
+
+  const handleAdd=()=>{
+    dispatch(postCoupon(formData))
+  }
 
   return (
     <>
@@ -38,12 +63,12 @@ function Discount() {
                 <ModalBody >
                     <Flex direction="column" gap="10px" mt="50px">
                     <label>Code</label>
-                    <Input type="text" placeholder="Enter the Coupon Code" name="Code"  />
+                    <Input type="text" placeholder="Enter the Coupon Code" name="code" value={formData.code} onChange={handleChange} />
                     <label>Description</label>
-                    <Input type="text" placeholder="Enter the Coupon Description" name="description" />
+                    <Input type="text" placeholder="Enter the Coupon Description" name="discriptions" value={formData.discriptions} onChange={handleChange}/>
                     <label>Amount</label>
-                    <Input type="text" placeholder="Enter the Discount Percentage" name="amount" />
-                    <Button  mb="25px" color="white" bg="black" _hover={{bg:"grey"}} >Add</Button>
+                    <Input type="number" placeholder="Enter the Discount Percentage" name="amount" value={formData.amount} onChange={handleChange}/>
+                    <Button  mb="25px" color="white" bg="black" _hover={{bg:"grey"}} onClick={handleAdd} >Add</Button>
                     </Flex> 
                 </ModalBody>
                 </ModalContent>

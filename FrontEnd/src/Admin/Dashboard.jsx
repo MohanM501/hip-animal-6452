@@ -8,14 +8,17 @@ import Product from "./Product"
 import Order from "./Order"
 import Customer from "./Customer"
 import Discount from "./Discount"
-import logo from "./logo.jpeg"
+import logo from "./Assets/logo.jpeg"
 import {
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
-    Button
+    Stack,
+    Avatar,
+    AvatarBadge
   } from '@chakra-ui/react'
+import Report from './Report';
 
 
 function Dashboard() {
@@ -56,7 +59,7 @@ function Dashboard() {
 
           <p>Saved reports</p>
 
-          <div id="discounts_div" className={`link_item`}>
+          <div onClick={()=>setValue("Reports")} id="discounts_div" className={`link_item ${value==="Reports" && "link_active"}`}>
             <GrLineChart/>
             <p>Reports</p>
           </div>
@@ -75,8 +78,12 @@ function Dashboard() {
       <div id="rhs">
         <div id="navbar">
         <Menu>
-            <MenuButton as={Button}>
-                Setting
+            <MenuButton>
+            <Stack ml="10px"  direction='row' spacing={4}>
+          <Avatar size='sm'>
+            <AvatarBadge boxSize='1.25em' bg='green.500' />
+          </Avatar>
+        </Stack>
             </MenuButton>
             <MenuList>
                 <MenuItem>Masum</MenuItem>
@@ -93,6 +100,8 @@ function Dashboard() {
             {value==="Customers"&&<Customer/>}
 
             {value==="Discounts"&&<Discount/>}
+
+            {value==="Reports" && <Report/>}
         </div>
       </div>
     </div>
