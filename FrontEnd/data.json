@@ -1,0 +1,87 @@
+{
+  "Citys": [
+    {
+      "id": 1,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Ahmedabad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Mumbai",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    }, 
+    {
+      "id": 4,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+
+    {
+      "id": 10,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 11,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 12,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 13,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 14,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 15,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 16,
+      "name": "Bangaluru",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    }
+
+  ]
+}
+  
