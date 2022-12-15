@@ -53,26 +53,48 @@ take these home</strong></Text>
                 
                 <GridItem border="1px solid black" h="550px">
 
-                <CenterMode/>
+                {/* <CenterMode/> */}
                 </GridItem>
             </Grid>
 
 
 
 
-    <Box mt="50px" bg="#fafafa" border="1px solid black" h="500px">
-
-        <Box >
-  <Text >You'll love to<br/>
-take these home </Text>
-        </Box>
+    
 
 
-        <Box mt="200px"  border="1px solid black" h="300px">
+<Box border="1px solid black" h="800px" w="100%" mt="80px">
+<Box border="1px solid black" h="120px" w="270px" mt="80px"><Text p="50px" fontSize="xl"><strong>There's more<br/>
+to renting</strong></Text></Box>
 
-        
-        </Box>
-    </Box>
+<Grid templateColumns='repeat(3,1fr)' border="1px solid red" h="500px" w="100%"    mt="30px" gap="15px">
+ 
+    <GridItem border="1px solid red" h="250px" pr='80px' >
+        <Image mt="18%" ml="35%" border="1px solid black" h="50px"   src="https://cdn.iconscout.com/icon/premium/png-128-thumb/bed-1810992-1537291.png"/>
+    </GridItem>
+
+    <GridItem border="1px solid red" h="250px" >
+
+    </GridItem>
+
+    <GridItem border="1px solid red" h="250px" >
+
+    </GridItem>
+
+    <GridItem border="1px solid red" h="250px"  >
+
+    </GridItem>
+
+    <GridItem border="1px solid red" h="250px"  >
+
+    </GridItem>
+
+    <GridItem border="1px solid red" h="250px"  >
+
+    </GridItem>
+</Grid>
+</Box>
+
 
 
             <Box>rohit</Box>
