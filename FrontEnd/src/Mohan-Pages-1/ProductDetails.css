@@ -8,6 +8,7 @@
 
  @media (min-width:769px){  
     .middle-section{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         border: 1px solid red;
@@ -38,13 +39,18 @@
     }
     #slider_product{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border: 1px solid yellow;
     }
     .slider {
         -webkit-appearance: none; 
         border-radius: 5px;
-        width:100%;
+        width:85%;
+        align-self: center;
         height: 25px;
+        border: 1px solid blue;
         background-color: gray;
     }
     .slider::-webkit-slider-thumb{
@@ -57,7 +63,7 @@
     }
     .slider-bottom{
         display: flex;
-        border:0px solid green;
+        border:1px solid green;
         justify-content: space-between;
         cursor: pointer;
     }
@@ -65,34 +71,16 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        border:0px solid blue;
+        border:1px solid blue;
     }
     .slider-months div{
         margin-left: -20px;
-        border:0px solid red;
+        border:1px solid red;
         display: flex;
         justify-content: center;
     }
-    .first-slid-hide{
-        display: none;
-    }
-    .first-slid-show{
-        
-        border:1px solid green;
-        display: flex;
-        justify-content: left;
-    }
-    .first-slid-show input{
-        
-        -webkit-appearance: none; 
-        padding-left: 20px;
-        border: 1px solid blue;
-        width: 100%;
-        flex-grow: 1;
-        margin-left: -25px;
-    }
+   
     
-
 } 
 
 @media (max-width:320px){  
