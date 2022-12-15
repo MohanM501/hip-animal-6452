@@ -1,0 +1,145 @@
+[
+    {
+      "price": 19999,
+      "currency": "INR",
+      "rating": 3.3,
+      "title": "AVITA SATUS S111 NU14A1INC43PN-SG 14.1 FHD (35.81cms) Laptop (Intel Celeron N4020/4GB/128GB SSD/FHD Display/Windows 11 Hom...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71qneC09MRL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 40990,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Acer Extensa 15 Lightweight Laptop Intel Core i5 11th Gen Processor - (8 GB/ 512 GB SSD/ Windows 11 Home/ 1.7kg/ Black/ El...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51Z-CqWUN1L._AC_UY218_.jpg"
+    },
+    {
+      "price": 33017,
+      "currency": "INR",
+      "rating": 3.6,
+      "title": "Lenovo IdeaPad Slim 3 Intel Core i3 10th Gen 15.6\" (39.62cm) FHD Thin & Light Laptop (8GB/1TB HDD/Windows 11/Office 2021/2...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61Dw5Z8LzJL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 19990,
+        "currency": "INR",
+        "rating": 3.6,
+      "title": "Dell Latitude E5470 Intel Core i5 6th Gen.6200u Processor 14.1 Inches HD Screen Notebook Computer (8 GB Ram & 25...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61BeBTB41DL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 19990,
+        "currency": "INR",
+        "rating": 3.8,
+      "title": "Lenovo V15 Intel Celeron N4020 15.6\" (39.62 cm) HD 220 nits Antiglare Thin and Light Laptop (4GB RAM/256GB SSD/DOS/Iron Gr...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/41pQAjtuKdL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 21524,
+        "currency": "INR",
+        "rating": 3.9,
+      "title": "Lenovo IdeaPad D330 Intel Celeron N4020 10.1\" (25cm)HD IPS Detachable 2-in-1 Laptop (4GB/128GB eMMC/Windows 10/1 Yr Warran...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51gkDWHPvQL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 28990,
+        "currency": "INR",
+        "rating": 2.7,
+      "title": "HP 14s, Intel Celeron N4500, 8GB RAM/256GB SSD 14-inches/35.6 cm HD, Micro-Edge Display/Alexa Built-in/Windows 11/Intel UH...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91d75JiCH9L._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 44990,
+        "currency": "INR",
+        "rating": 4.4,
+      "title": "Honor MagicBook 14, AMD Ryzen 5 5500U 14-inch (35.56 cm) FHD IPS Anti-Glare Thin and Light Laptop (16GB/512GB PCIe SSD/Win...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71guAvSMbSL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 38990,
+        "currency": "INR",
+        "rating": 4.1,
+      "title": "HP 14s, 11th Gen Intel Core i3-1115G4, 8GB RAM/256GB SSD 14-inch(35.6 cm) Micro-Edge, Anti-Glare, FHD Laptop/Alexa Built-i...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81zoyHn5uJL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 23990,
+        "currency": "INR",
+        "rating": 3.9,
+      "title": "ASUS VivoBook 15 (2021), 15.6-inch (39.62 cm) HD, Dual Core Intel Celeron N4020, Thin and Light Laptop (4GB RAM/256GB SSD/...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71S8U9VzLTL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 50990,
+        "currency": "INR",
+        "rating": 3.7,
+      "title": "HP ProBook 440 G8 Notebook PC, 11th Gen Intel Core i5-1135G7 14 inch(35.6cm) HD Laptop(8GB RAM/512GB SSD/Intel Irix Xe Gra...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61lQFJgdrrL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 41990,
+        "currency": "INR",
+        "rating": 4.1,
+      "title": "HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD 15.6-inch(39.6 cm) Micro-Edge Anti-Glare FHD Laptop/Alexa Built-in/...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91-U2J7fKoL._AC_UL320_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 27054,
+        "currency": "INR",
+        "rating": 3.7,
+      "title": "Lenovo IdeaPad Slim 3 Intel Celeron N4020 4th Gen 15.6\" (39.62cm) HD Thin & Light Laptop (8GB/256GB SSD/Windows 11/Office ...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61Dw5Z8LzJL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 396990,
+        "currency": "INR",
+        "rating": 4,
+      "title": "ASUS ROG Zephyrus Duo 16 Dual Screen Laptop, 16\" (40.64 cm) UHD+/FHD+ 120Hz/240Hz/3ms, AMD Ryzen 9 6900HX, 16GB RTX 3080 T...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71JFMDI0tOL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+        "price": 85990,
+        "currency": "INR",
+        "rating": 4.4,
+      "title": "ASUS ROG Strix G17, 17.3-inch (43.94 cms) FHD 144Hz, AMD Ryzen 7 4800H, RTX 3050 Ti 4GB Graphics, Gaming Laptop (16GB/1TB ...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61bwqXfWiaL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+      
+    },
+    {
+        "price": 61000,
+        "currency": "INR",
+        "rating": 4,
+      "title": "HP 14s, 12th Gen Intel Core i5 16GB RAM/512GB SSD 14-inch(35.6 cm) Micro-Edge, FHD Laptop/Intel Iris Xe Graphics/Alexa/Dua...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81haBMsW77L._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    }
+  ]
