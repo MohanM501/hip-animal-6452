@@ -1,0 +1,74 @@
+{
+  "package": [
+    { "id": 1,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/bedroom-v1_new.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "title":"Bedroom",
+      "No_of_package":"21 Package(s)"
+
+   },
+   { "id": 2,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/living-room-v2.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/living-room.svg",
+      "title":"Living Room",
+      "No_of_package":"14 Package(s)"
+
+   },
+   { "id": 3,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/appliances.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/appliance.svg",
+      "title":"Appliances",
+      "No_of_package":"20 Package(s)"
+
+   },
+   { "id": 4,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/study-room-v1.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/study-room.svg",
+      "title":"Work From Home",
+      "No_of_package":"6 Package(s)"
+
+   },
+   { "id": 5,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/dining-v1.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/dining.svg",
+      "title":"Kitchen & Dining",
+      "No_of_package":"2 Package(s)"
+
+   },
+   { "id": 6,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/smart-packages.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/smart-packages.svg",
+      "title":"Smart Home",
+      "No_of_package":"3 Package(s)"
+
+   },
+   { 
+      "id": 7,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/fitness-packages.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/fitness-packages.svg",
+      "title":"Fitness & Exercise",
+      "No_of_package":"1 Package(s)"
+  }
+],
+  "packagetype":[{
+      "id": 1,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/studio-apartment.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/studio-apartment.svg",
+      "title":"Studio Apartment",
+      "No_of_package":"1 Package(s)"
+},
+{
+    "id": 2,
+    "image":"https://www.rentomojo.com/public/images/category/package-bg/1-bhk-new.jpg",
+  "icon":"https://www.rentomojo.com/public/images/category/icons/1-bhk.svg",
+  "title":"1 BHK",
+  "No_of_package":"2 Package(s)"
+},
+{
+      "id": 2,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/2-bhk-new.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/2-bhk.svg",
+      "title":"2 BHK",
+      "No_of_package":"1 Package(s)"
+}]
+}
