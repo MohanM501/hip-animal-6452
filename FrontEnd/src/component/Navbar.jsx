@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Box, Button, Center, Grid, GridItem, Image, Input,Text, InputGroup, InputRightElement, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Select, Stack  } from '@chakra-ui/react';
 import React, { useEffect } from 'react'
 import logo from "../assets/logo.png"
-import "./Navbar.css"
+
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { State } from "../Redux/City/action";
@@ -26,7 +26,7 @@ useEffect(()=>{
  
   return (
    <box >
-    <Center boxShadow='md'  p="10px"  display="Flex"  gap='12' bgColor="" className='nav' >
+    <Center boxShadow='md'  p="10px"  display="Flex"  gap='12' bgColor="" className='nav'  h="60px">
     <Link to='/'> <Image sizes='92*36' htmlHeight={36} htmlWidth={92}
     // boxSize={}
     src={logo}
