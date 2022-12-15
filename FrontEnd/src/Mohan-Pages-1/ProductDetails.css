@@ -1,22 +1,38 @@
 .product-details-main{
      color: black; 
     background-color: white;
-    width:100vw;
-    height:100vh;
+    width:auto;
+    height:auto;
 }
 
 
- @media (min-width:769px){  
+ 
     .middle-section{
         width: 100%;
         display: flex;
         justify-content: space-between;
+        gap:8px;
         border: 1px solid red;
+        padding:20px;
     }
     .left-side{
+       
         width:70%;
     }
+    .why_rent{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        text-align: left;
+    }
+    .why_rent div{
+        width:100%;
+    }
+    .hide-why,.hide-prod{
+            display: none;
+    }
     .right-side{
+        padding: 20px 0px 20px 0px;
         width:30%;
         border: 1px solid green;
     }
@@ -32,6 +48,8 @@
         background-color: gray;
         opacity: 0.6;
         font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     #how_long img{
         width:20px;
@@ -63,7 +81,7 @@
     }
     .slider-bottom{
         display: flex;
-        border:1px solid green;
+        border:0px solid green;
         justify-content: space-between;
         cursor: pointer;
     }
@@ -71,24 +89,161 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        border:1px solid blue;
+        border:0px solid blue;
     }
     .slider-months div{
         margin-left: -20px;
-        border:1px solid red;
+        border:0px solid red;
         display: flex;
         justify-content: center;
     }
-   
+    .month-refund{
+        width: 100%;
+        display: flex;
+        border: 1px solid blue;
+        justify-content: center;
+        margin-top: 20px;
+       
+    }
+    .monthly-rent{
+        border:1px solid gray;
+        width:45%;
+        text-align: left;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding:10px 0px 10px 0px;
+    }
+    /* .monthly-rent h2{
+        border: 1px solid red;
+        width: 100%;
+    } */
+    .refundable-deposit{
+        border:1px solid gray;
+        width: 45%;
+        text-align: left;
+        align-self: center;
+        padding:10px 0px 10px 0px;
+        padding-left: 5%;
+        
+    }
+    .month-img-div{
+        display: flex;
+        gap:5px;
+        font-size: 12px;
+    }
+    .month-img{
+        width:15px;
+    }
+    .month-number{
+        font-size: 20px;
+    }
+   #mo{
+       font-size: 12px;
+   }
+    .month-below-parent{
+        display: flex;
+        border: 1px solid brown;
+        justify-content: center;
+        
+    }
+    .month-below-div{
+        width: 90%;
+        border: 1px solid green;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,80px);
+       
+    }
+    .month-below{
+        display: flex;
+        font-size: 12px;
+        width: 100%;
+        border: 1px solid brown;
+        text-align: left; 
+        gap:5px;
+        padding:10px 0px 10px 0px;
+        
+    }
+    #hide-this{
+        display: none;
+    }
+    .month-below-div div:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aquamarine;
+    }
+    .Compare{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .Compare>button{
+        width:90%;
+        border: 1px solid aqua;
+        border-radius: 5px;
+        color:aqua;
+        padding:5px 0px 5px 0px;
+    }
+    .delivery-center{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .delivery{
+        width: 95%;
+        display: flex;
+        gap:10px;
+    }
+    .Book{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+    .Book button{
+        width:90%;
+        border:1px solid red;
+        background-color: red;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        font-size: 20px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 5px;
+    }
     
-} 
 
-@media (max-width:320px){  
 
+@media (max-width:599px){  
+     .middle-section{
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .left-side{
+         width:100%;
+     }
+     .right-side{
+         width:100%;
+     }
 }
 
-@media (min-width:321px) and (max-width:768px){  
-
+@media (min-width:600px) and (max-width:768px){  
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-side{
+        width:100%;
+    }
+    .right-side{
+        width:100%;
+    }
 }
 
 /* background: linear-gradient(90deg,rgb(117,252,117) 60%, rgba(214,214,214) 60%); */
