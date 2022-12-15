@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Button } from "@chakra-ui/react";
 
 import "./ProductDetails.css";
+import WhyRent from './WhyRent';
+import ProdDetails from './ProdDetails';
 
 
 const ProductDetails = () => {
@@ -67,10 +69,10 @@ const ProductDetails = () => {
             <div onClick={()=>handleProduct(true)}>Product Details</div>
           </div>
           <div className={product?"hide-why":"show-why"}>
-            abcd
+            <WhyRent/>
           </div>
           <div className={product?"show-prod":"hide-prod"}>
-            lhogj
+            <ProdDetails/>
           </div>
         </div>
 
