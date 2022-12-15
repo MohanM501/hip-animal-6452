@@ -8,9 +8,7 @@ const  FLutterSlider=()=> {
     const [showTooltip, setShowTooltip] = React.useState(false)
     console.log("val",sliderValue)
     const val=sliderValue
-    // useEffect(()=>{
-    //     dispatch(AllFurniture(val))
-    // },[val])
+    
     return (
     <div>
             

@@ -129,6 +129,7 @@ const PhoneLogin = () => {
         .then((confirmationResult) => {
           window.confirmationResult = confirmationResult;
           setotpsec(true);
+          console.log(confirmationResult)
         })
         .catch((error) => {
           alert("Error SMS not sent please try again" + `${error}`);
@@ -146,6 +147,7 @@ const PhoneLogin = () => {
           .then((userCredential) => {
             const {displayName, uid} = userCredential.user;
             console.log(displayName, uid);
+            console.log(userCredential._tokenResponse.idToken)
             setname(displayName)
             const query = doc(db,"users", `${uid}`)
             getDoc(query)
