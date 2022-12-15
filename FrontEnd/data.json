@@ -1,87 +1,284 @@
 {
-  "Citys": [
-    {
-      "id": 1,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
-      "id": 2,
-      "name": "Ahmedabad",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
-      "id": 3,
-      "name": "Mumbai",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    }, 
-    {
-      "id": 4,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
-      "id": 5,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
-      "id": 6,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+  "package": [
+    { "id": 1,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/bedroom-v1_new.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "title":"Bedroom",
+      "type":"Bedroom",
+      "No_of_package":"21 Package(s)"
+
+   },
+   { "id": 2,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/living-room-v2.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/living-room.svg",
+      "title":"Living-Room",
+      "type":"Living Room",
+      "No_of_package":"14 Package(s)"
+
+   },
+   { "id": 3,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/appliances.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/appliance.svg",
+      "title":"Appliances",
+      "type":"Appliances",
+      "No_of_package":"20 Package(s)"
+
+   },
+   { "id": 4,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/study-room-v1.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/study-room.svg",
+      "title":"Work-From-Home",
+      "type":"Work From Home",
+      "No_of_package":"6 Package(s)"
+
+   },
+   { "id": 5,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/dining-v1.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/dining.svg",
+      "type":"Kitchen & Dining",
+      "title":"Kitchen&Dining",
+      "No_of_package":"2 Package(s)"
+
+   },
+   { "id": 6,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/smart-packages.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/smart-packages.svg",
+      "type":"Smart Home",
+      "title":"Smart-Home",
+      "No_of_package":"3 Package(s)"
+
+   },
+   { 
       "id": 7,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
-      "id": 8,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/fitness-packages.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/fitness-packages.svg",
+      "type":"Fitness & Exercise",
+      "title":"Fitness&Exercise",
+      "No_of_package":"1 Package(s)"
+  }
+],
+"furniture":[
+   {
+      "id": 1,
+      "image":"https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Double Bed with Fridge & Washing Machine",
+      "title":"Bedroom",
+      "price":"2286",
+      "dicount":"2357",
+      "No_of_package":"3 items"
+   },
+   {
+      "id": 2,
+      "image":"https://p.rmjo.in/moodShot/wruziw9d-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Sofa & Bed Combo",
+      "title":"Bedroom",
+      "price":"549",
+      "dicount":"",
+      "No_of_package":"2 items"
+      },
+      {
+         "id": 3,
+         "image":"https://p.rmjo.in/moodShot/ybjef3us-512x256.jpg",
+         "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+         "type":"Double Bed with study Table & chair",
+         "title":"Bedroom",
+         "price":"861",
+         "dicount":"887",
+         "No_of_package":"3 items"
+         },
+         {
+            "id": 4,
+            "image":"https://p.rmjo.in/moodShot/y9knx5fz-1024x512.jpg",
+            "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+            "type":"Magnum Bedroom Storage",
+            "title":"Bedroom",
+            "price":"947",
+            "dicount":"1018",
+            "No_of_package":"2 items"
+         },
+         { "id": 5,
+         "image":"https://p.rmjo.in/moodShot/83x0ypkd-1024x512.jpg",
+         "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+         "type":"Bedroom Basics",
+         "title":"Bedroom",
+         "price":"928",
+         "dicount":"956",
+         "No_of_package":"5 items"
+
+   },
+   { "id": 6,
+   "image":"https://p.rmjo.in/moodShot/4u86w254-512x256.jpg",
+   "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+   "type":"Hutch Twin Wardrobe Set",
+   "title":"Bedroom",
+   "price":"419",
+   "dicount":"",
+   "No_of_package":"3 items"
+
+   },
+   { "id": 7,
+   "image":"https://p.rmjo.in/moodShot/pngfhl2b-512x256.jpg",
+   "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+   "type":"Magnum Queen Master Bedroom",
+   "title":"Bedroom",
+   "price":"1723",
+   "dicount":"1776",
+   "No_of_package":"4 items"
+
+   },
+   { "id":8,
+      "image":"https://p.rmjo.in/moodShot/13ckfjbq-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Magnum Queen Basic Bedroom",
+      "title":"Bedroom",
+      "price":"1134",
+      "dicount":"1207",
+      "No_of_package":"3 items"
+  },
+  { 
       "id": 9,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-
-    {
+      "image":"https://p.rmjo.in/moodShot/n1r44ynx-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Aurora Queen Utility Bedroom",
+      "title":"Bedroom",
+      "price":"1374",
+      "dicount":"1417",
+      "No_of_package":"4 items"
+  },
+  { 
       "id": 10,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/4fyia0xv-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Napster Queen Basic Bedroom",
+      "title":"Bedroom",
+      "price":"704",
+      "dicount":"785",
+      "No_of_package":"3 items"
+  },
+  { 
       "id": 11,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/aja9vwin-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Napster Queen Utility Bedroom",
+      "title":"Bedroom",
+      "price":"1044",
+      "dicount":"1076",
+      "No_of_package":"4 items"
+  },
+  { 
       "id": 12,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/g00rc38r-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Poise Queen Bedroom",
+      "title":"Bedroom",
+      "price":"1277",
+      "dicount":"1316",
+      "No_of_package":"4 items"
+  },
+  { 
       "id": 13,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/qe6gjqne-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Hutch Queen Bedroom",
+      "title":"Bedroom",
+      "price":"1650",
+      "dicount":"1738",
+      "No_of_package":"2 items"
+  },
+  { 
       "id": 14,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/85lfsbag-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Napster Twin Bedroom",
+      "title":"Bedroom",
+      "price":"249",
+      "dicount":"",
+      "No_of_package":"3 items"
+  },
+  { 
       "id": 15,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    },
-    {
+      "image":"https://p.rmjo.in/moodShot/0qwt1bn6-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Napster Single Utility Bedroom",
+      "title":"Bedroom",
+      "price":"977",
+      "dicount":"1006",
+      "No_of_package":"4 items"
+  },
+  { 
       "id": 16,
-      "name": "Bangaluru",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
-    }
-
-  ]
-}
+      "image":"https://p.rmjo.in/moodShot/60lm704c-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Double Bed & Washing Machine Combo",
+      "title":"Bedroom",
+      "price":"1055",
+      "dicount":"1088",
+      "No_of_package":"2 items"
+  },
+  { 
+      "id": 17,
+      "image":"https://p.rmjo.in/moodShot/ccn63kl3-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Poise Queen Bedroom & Queen Mattress",
+      "title":"Bedroom",
+      "OutofStock":"true",
+      "Seemore":"See package details"
+      
+  },
+  { 
+      "id": 18,
+      "image":"https://p.rmjo.in/moodShot/lcc7ot7j-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Hutch 2-Door Wardrobe & Saddle Shoe Rack",
+      "title":"Bedroom",
+      "OutofStock":"true",
+      "Seemore":"See package details"
+      
+  },
+  { 
+      "id": 19,
+      "image":"https://p.rmjo.in/moodShot/3k82w4uo-512x256.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+      "type":"Napster Single bed, single (6*3 ) coir Foa...",
+      "title":"Bedroom",
+      "OutofStock":"true",
+      "Seemore":"See package details"
+      
+  },{ 
+   "id": 20,
+   "image":"https://p.rmjo.in/moodShot/y0r9yuzq-512x256.jpg",
+   "icon":"https://www.rentomojo.com/public/images/category/icons/bedroom.svg",
+   "type":"Napster Single bed,single Door Fridge Co.....",
+   "title":"Bedroom",
+   "OutofStock":"true",
+   "Seemore":"See package details"
   
+}
+   ],
+  "packagetype":[{
+      "id": 1,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/studio-apartment.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/studio-apartment.svg",
+      "title":"StudioApartment",
+      "type":"Studio Apartment",
+      "No_of_package":"1 Package(s)"
+},
+{
+    "id": 2,
+    "image":"https://www.rentomojo.com/public/images/category/package-bg/1-bhk-new.jpg",
+  "icon":"https://www.rentomojo.com/public/images/category/icons/1-bhk.svg",
+  "title":"1BHK",
+  "type":"1 BHK",
+  "No_of_package":"2 Package(s)"
+},
+{
+      "id": 3,
+      "image":"https://www.rentomojo.com/public/images/category/package-bg/2-bhk-new.jpg",
+      "icon":"https://www.rentomojo.com/public/images/category/icons/2-bhk.svg",
+      "title":"2BHK",
+      "type":"2 BHK",
+      "No_of_package":"1 Package(s)"
+}]
+}

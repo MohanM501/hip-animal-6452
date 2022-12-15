@@ -1,7 +1,7 @@
 
 import Dashboard from './Admin/Dashboard';
 import './App.css';
-// import MainRoute from './Routes/MainRoute';
+import MainRoute from './Routes/MainRoute';
 import Navbar from "./component/Navbar"
 import Home from "./component/Home"
 // import {Routes,Route,Link} from "react-router-dom"
@@ -10,9 +10,9 @@ import Home from "./component/Home"
 function App() {
   return (
     <div className="App">
-      {/* <MainRoute/> */}
-      <Navbar/>
-      <Home/>
+      <MainRoute/>
+      {/* <Navbar/> */}
+      {/* <Home/> */}
     </div>
   );
 }
