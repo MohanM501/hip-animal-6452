@@ -1,4 +1,3 @@
-const store= legacy_createStore(rootReducer,applyMiddleware(t
 import {legacy_createStore,applyMiddleware,compose,combineReducers} from "redux"
 import {reducer as Package} from "./Package/reducer"
 import {reducer as City} from "./City/reducer"
