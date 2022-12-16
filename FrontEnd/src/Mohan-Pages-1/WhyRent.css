@@ -1,0 +1,51 @@
+.why-rent-parent{
+    width: 90%;
+    margin: auto;
+}
+
+.why-rent-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-rent-first-heading{
+    display: flex;
+    flex-direction: column;
+}
+.why-rent-first-heading div:first-child{
+    font-size: 27px;
+    font-weight: 400;
+}
+.why-rent-first-heading div:last-child{
+    font-size: 13px;
+    margin-top: 10px;
+    
+}
+.why-rent-first img{
+    width:40%;
+
+}
+
+.relocate{
+    display: flex;
+    justify-content:space-between;
+}
+.relocate img{
+    width:100%;
+    align-self: center;
+}
+.relocate-img{
+    width:10%;
+    display: flex;
+    justify-content: center;
+}
+.relocate-para{
+    width: 80%;
+}
+
+@media (max-width:599px){
+    .relocate{
+        font-size: 13px;
+    }
+}

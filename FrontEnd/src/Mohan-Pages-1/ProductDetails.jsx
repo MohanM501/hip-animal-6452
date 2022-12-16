@@ -16,6 +16,7 @@ const ProductDetails = () => {
   const [monthlyrent, setMonthlyRent] = useState("459");
   const refundable_amount = 609;
   const [product,SetProduct]=useState(true);
+  const [blue,setBlue]=useState("50");
 
   const imageLogo = "https://www.rentomojo.com/public/images/icons/info-line-icon.svg";
 
@@ -25,30 +26,41 @@ const ProductDetails = () => {
 
     if (val === "3") {
       ref.current.value = 0;
-      setMonthlyRent("506")
+      setMonthlyRent("506");
+      setBlue(0);
     } else if (val === "6") {
       ref.current.value = 50;
-      setMonthlyRent("459")
+      setMonthlyRent("459");
+      setBlue(50)
     } else if (val === "12") {
       ref.current.value = 100;
-      setMonthlyRent("519")
+      setMonthlyRent("519");
+      setBlue(100);
     }
 
   }
 
   const handlefirst = (e) => {
-    console.log(e.value, "valeue before");
+    // console.log(e.value, "valeue before");
+
+    setBlue(e.value);
     if (e.value > 25 && e.value <= 75) {
       e.value = 50;
+      setBlue(50);
+      setMonthlyRent("459");
     } else if (e.value <= 25) {
       e.value = 0;
+      setBlue(0);
+      setMonthlyRent("506");
     } else if (e.value > 75) {
       e.value = 100;
+      setBlue(100);
+      setMonthlyRent("519");
     }
     console.log(e.value, "valeue");
 
   }
-
+  
   const handleProduct=(bool)=>{
         if(bool===false){
           SetProduct(false);
@@ -65,8 +77,8 @@ const ProductDetails = () => {
         <div className="left-side">
           <img src="https://p.rmjo.in/moodShot/qpaqpi6f-1024x512.jpg" alt="topImage" />
           <div className='why_rent'>
-            <div onClick={()=>handleProduct(false)}>Why Rent from US</div>
-            <div onClick={()=>handleProduct(true)}>Product Details</div>
+            <div className={product?"show-border1":"hide-border"} onClick={()=>handleProduct(false)}>Why Rent from US</div>
+            <div className={product?"hide-border":"show-border2"} onClick={()=>handleProduct(true)}>Product Details</div>
           </div>
           <div className={product?"hide-why":"show-why"}>
             <WhyRent/>
@@ -85,7 +97,7 @@ const ProductDetails = () => {
 
           <div id="slider_product">
 
-            <input type="range" ref={ref} onChange={(e) => handlefirst(e.target)} min="1" max="100" className="slider" id="myrange" />
+            <input type="range" ref={ref}  onChange={(e) => handlefirst(e.target)} min="1" max="100" className="slider" style={{background:`linear-gradient(90deg,lightblue ${blue}%,gray ${blue}%)`}} id="myrange" />
 
             <div className="slider-bottom" >
               <div className="slider-months">
