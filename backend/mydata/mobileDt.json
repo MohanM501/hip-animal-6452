@@ -1,0 +1,201 @@
+[
+    {
+      "price": 28999,
+      "currency": "INR",
+      "rating": 4.3,
+      "title": "OnePlus Nord 2T 5G (Gray Shadow, 8GB RAM, 128GB Storage)",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/617MPEZB5mL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {  
+      "price": 30999,
+      "currency": "INR",
+      "rating": 3.9,
+      "title": "Samsung Galaxy M53 5G (Emerald Brown, 8GB, 128GB Storage) | 108MP | sAmoled+ 120Hz | 16GB RAM with RAM Plus...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81Bf1rWLA+L._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 5999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Redmi A1 (Light Blue, 2GB RAM, 32GB Storage) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Andro...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81UT07JsBqL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 7999,
+      "currency": "INR",
+      "rating": 3.8,
+      "title": "Tecno Spark 9 (Infinity Black, 4GB RAM,64GB Storage) | 7GB Expandable RAM | Helio G37 Gaming Processor",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/9185sX9EGFL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 8499,
+      "currency": "INR",
+      "rating": 4.2,
+      "title": "Redmi 9 Activ (Carbon Black, 4GB RAM, 64GB Storage) | Octa-core Helio G35 | 5000 mAh Battery",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/911TJ1CDbLL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 7499,
+      "currency": "INR",
+      "rating": 4.2,
+      "title": "Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/810KHyQ4WcL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 8299,
+      "currency": "INR",
+      "rating": 3.9,
+      "title": "Redmi 10A (Slate Grey, 4GB RAM, 64GB Storage) | 2 Ghz Octa Core Helio G25 | 5000 mAh Battery | Finger Print Sensor | Upto ...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71kVEmAMyEL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 12989,
+      "currency": "INR",
+      "rating": 4.2,
+      "title": "OPPO A31 (Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71KCwNV6MuL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 11999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Samsung Galaxy M13 (Aqua Green, 4GB, 64GB Storage) | 6000mAh Battery | Upto 8GB RAM with RAM Plus",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81-fFXQdPTL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 14990,
+      "currency": "INR",
+      "rating": 4.2,
+      "title": "OPPO A74 5G (Fantastic Purple,6GB RAM,128GB Storage) with No Cost EMI/Additional Exchange Offers",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71geVdy6-OS._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 54999,
+      "currency": "INR",
+      "rating": 4.3,
+      "title": "OnePlus 10T 5G (Moonstone Black, 12GB RAM, 256GB Storage)- Additional Exchange Offer INR 10,000 on iOS & OP...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71XKAnxCsLL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 4749,
+      "currency": "INR",
+      "rating": 5,
+      "title": "IKALL Z2 Smartphone with 6 Inch Display (3GB, 16GB) (4G Volte) (Dark Blue)",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61jUm-x0HJL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+
+      "price": 7499,
+      "currency": "INR",
+      "rating": 4,
+      "title": "realme narzo 50i (Carbon Black, 2GB RAM+32GB Storage) Octa Core Processor | 6.5\" inch Large Display",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81HJ4pkOsiL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 9999,
+      "currency": "INR",
+      "rating": 3.7,
+      "title": "Redmi 10A Sport (Slate Grey, 6GB RAM, 128GB Storage) | 2 Ghz Octa Cor Helio G25 | 5000 mAh Battery | Finger Print Sensor |...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71t7mcs1VoL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    { 
+      "price": 13999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Samsung Galaxy M13 (Aqua Green, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81-fFXQdPTL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 5999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Redmi A1 (Light Green, 2GB RAM 32GB ROM) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Android 12",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81UmTnrBDSL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 11999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage) | 6000mAh Battery | Upto 8GB RAM with RAM Plus",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/812YsUxpyfL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 18999,
+      "currency": "INR",
+      "rating": 4.3,
+      "title": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71V--WZVUIL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 8999,
+      "currency": "INR",
+      "rating": 3.8,
+      "title": "Tecno Spark 9 (Sky Mirror, 6GB RAM,128GB Storage) | 11GB Expandable RAM | Helio G37 Gaming Processor",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91J1pz6vBcL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 5999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Redmi A1 (Black, 2GB RAM, 32GB Storage) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Android 12",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81BxHYjeA2L._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 12499,
+      "currency": "INR",
+      "rating": 3.6,
+      "title": "Vivo Y16 (Drizzling Gold, 4GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61TLDQrtEOL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    },
+    {
+      "price": 23999,
+      "currency": "INR",
+      "rating": 4,
+      "title": "Redmi K50i 5G (Phantom Blue, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz L...",
+      "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/715rSRKUlLL._AC_UY218_.jpg",
+      "quantity":5,
+      "status":true
+    }
+  ]
