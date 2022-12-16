@@ -7,7 +7,7 @@ const getCoupon=(dispatch)=>{
     .then((res)=>{
             dispatch(({
                 type:types.GET_COUPON_SUCCESS,
-                payload:res.data.data
+                payload:res.data
             }))
         })
         .catch((err)=>{
@@ -20,7 +20,6 @@ const getCoupon=(dispatch)=>{
         dispatch(({type:types.POST_COUPON_REQUEST}))
        axios.post(`https://victorious-shoe-frog.cyclic.app/discount/create`,data)
             .then((res)=>{
-                console.log(res)
                 dispatch(({
                     type:types.POST_COUPON_SUCCESS,
                     payload:res.data
@@ -34,4 +33,37 @@ const getCoupon=(dispatch)=>{
             })
         }
 
-export {getCoupon,postCoupon}
+        const deleteCoupon=(id)=>(dispatch)=>{
+            dispatch(({type:types.DELETE_COUPON_REQUEST}))
+           axios.delete(`https://victorious-shoe-frog.cyclic.app/discount/delete/${id}`)
+                .then((res)=>{
+                    dispatch(({
+                        type:types.DELETE_COUPON_SUCCESS,
+                        payload:res.data
+                    }))
+                    alert("Coupon Deleted Successfully")
+                    dispatch(getCoupon)
+                })
+                .catch((err)=>{
+                    console.log(err)
+                    dispatch(({type:types.DELETE_COUPON_FAILURE}))
+                })
+            }
+
+            const patchCoupon=(id,status)=>(dispatch)=>{
+                dispatch(({type:types.EDIT_COUPON_REQUEST}))
+               axios.patch(`https://victorious-shoe-frog.cyclic.app/discount/patch/${id}`,{status:!status})
+                    .then((res)=>{
+                        dispatch(({
+                            type:types.EDIT_COUPON_SUCCESS,
+                            payload:res.data
+                        }))
+                        dispatch(getCoupon)
+                    })
+                    .catch((err)=>{
+                        console.log(err)
+                        dispatch(({type:types.EDIT_COUPON_FAILURE}))
+                    })
+                }
+
+export {getCoupon,postCoupon,deleteCoupon,patchCoupon}
