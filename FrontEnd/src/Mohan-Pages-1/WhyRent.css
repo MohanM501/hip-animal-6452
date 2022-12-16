@@ -30,6 +30,7 @@
 .relocate{
     display: flex;
     justify-content:space-between;
+    margin-top: 10px;
 }
 .relocate img{
     width:100%;
