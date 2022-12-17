@@ -11,17 +11,17 @@ import { State } from "../Redux/City/action";
 
 const Navbar = () => {
 const dispatch=useDispatch()
-const data =useSelector((state)=>
-    state.City.City
-)
-const location =useLocation()
-console.log(data)
-useEffect(()=>{
-    if(location.search||data.length===0){
-      dispatch(State)
+// const data =useSelector((state)=>
+//     state.City.City
+// )
+// const location =useLocation()
+// console.log(data)
+// useEffect(()=>{
+//     if(location.search||data.length===0){
+//       dispatch(State)
 
-    }
-})
+//     }
+// })
 
  
   return (
@@ -45,12 +45,12 @@ useEffect(()=>{
     <PopoverBody >
           <Grid templateColumns='repeat(8,1fr)' h="300px"  >
             
-              {data && data.length>0 && data.map((el)=>{
+              {/* {data && data.length>0 && data.map((el)=>{
                 return (<Box>
                     <Image src={el.image}/>
                       <Text> {el.name}</Text>
                 </Box>)
-              })}
+              })} */}
            
           </Grid>
     </PopoverBody>

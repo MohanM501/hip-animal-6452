@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from "styled-components"
 import FilterSort from '../../../Components/PackageComponents/FilterSort'
 import AllFurniture from '../../../Components/PackageComponents/AllFurniture'
 const Furniture = () => {
+  const[val,setval]=useState(0)
+
+  const slideval=(getval)=>{
+    console.log(getval,"alex")
+    setval(getval)
+    
+  }
+
+
+
+
   return (
     <Wrapper>
         <WrapperFilterSort>
-            <FilterSort/>
+            <FilterSort slideval={slideval}/>
         </WrapperFilterSort>
         <WrapperMusicAlbums>
-            <AllFurniture/>
+            <AllFurniture getval={val}/>
         </WrapperMusicAlbums>
     </Wrapper>
   )

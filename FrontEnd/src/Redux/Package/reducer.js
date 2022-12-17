@@ -4,6 +4,7 @@ const initialState = {
 
     package: [],
     furniture:[],
+    wishlist:[],
     title:"",
     isLoading: false,
     isError: false,
@@ -70,6 +71,22 @@ const initialState = {
             title:payload,
 
           }
+
+
+          case types.GET_wishlist_REQUEST:
+        return{
+          ...state,
+          isLoading:true,
+          isError:false,
+         
+        }
+        case types.GET_wishlist_SUCCESS:
+        return{
+          ...state,
+          isLoading:false,
+          isError:false,
+          wishlist:payload,
+        }
 
 
 
