@@ -23,6 +23,7 @@ const Package = () => {
     
 
     const handleclick=(title)=>{
+
         alert(title)
 
         dispatch(Getfurniturn(title))
@@ -36,7 +37,7 @@ const Package = () => {
         if(location.search|| packagedata.length===0)
         {
             dispatch(Getpackage)
-            // navigate("/furniture")
+            
         }
         
         if(location.search|| packageType.length===0)

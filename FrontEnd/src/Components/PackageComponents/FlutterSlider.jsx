@@ -1,22 +1,27 @@
 import { Slider, SliderFilledTrack, SliderMark, SliderThumb, SliderTrack, Tooltip } from "@chakra-ui/react"
 import React, { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import AllFurniture from "./AllFurniture"
-const  FLutterSlider=()=> {
+import { useSearchParams } from "react-router-dom"
+
+const  FLutterSlider=({slideval})=> {
     // const dispatch=useDispatch();
+    // const [searchParams,setsearchParams]=useSearchParams();
     const [sliderValue, setSliderValue] = React.useState(0)
     const [showTooltip, setShowTooltip] = React.useState(false)
-    console.log("val",sliderValue)
+    // console.log("val",sliderValue)
     const val=sliderValue
+    // console.log(val)
+    slideval(val)
+   
+//    useEffect(()=>{
+//     setsearchParams(sliderValue)
+//     },[setsearchParams])
     
     return (
     <div>
-            
-            {/* <AllFurniture val={val} /> */}
-        
-      <Slider
+    <Slider
         id='slider'
-        defaultValue={5}
+        defaultValue={100}
         min={0}
         max={100}
         colorScheme='teal'
@@ -24,14 +29,14 @@ const  FLutterSlider=()=> {
         onMouseEnter={() => setShowTooltip(false)}
         onMouseLeave={() => setShowTooltip(false)}
       >
-        <SliderMark value={25} mt='1' ml='-2.5' fontSize='sm'>
-          1
+        <SliderMark value={10} mt='1' ml='-2.5' fontSize='sm'>
+          3+
         </SliderMark>
         <SliderMark value={50} mt='1' ml='-2.5' fontSize='sm'>
-          3
+          6+
         </SliderMark>
-        <SliderMark value={75} mt='1' ml='-2.5' fontSize='sm'>
-          6
+        <SliderMark value={90} mt='1' ml='-2.5' fontSize='sm'>
+          12+
         </SliderMark>
         <SliderTrack >
           <SliderFilledTrack />
@@ -45,6 +50,7 @@ const  FLutterSlider=()=> {
           label={`${sliderValue}%`}
         >
           <SliderThumb />
+          
         </Tooltip>
         
       </Slider>
