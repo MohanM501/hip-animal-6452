@@ -39,11 +39,11 @@ useEffect(()=>{
     <Button>Click me</Button>
   </PopoverTrigger>
   <PopoverContent w="1000px" m="center">
-  <Input  mt="40px" w="99%" m="center" type='text' placeholder=''  outline="none" border="1px solid black" borderRadius='10px' />
+  <Input  mt="40px" w="99%" m="center" textAlign="center" type='text' placeholder=''  outline="none" border="1px solid black" borderRadius='10px' />
     <PopoverArrow />
     <PopoverCloseButton />
     <PopoverBody >
-          <Grid templateColumns='repeat(8,1fr)' h="300px"  >
+          <Grid templateColumns='repeat(8,1fr)' h="300px" border="1px solid black" textAlign="center"  >
             
               {data && data.length>0 && data.map((el)=>{
                 return (<Box>
