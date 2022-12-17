@@ -1,0 +1,24 @@
+.parent{
+    background-color: white;
+    color:black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+.left_cart{
+    width:60%;
+    border: 1px solid yellowgreen;
+}
+
+.right_cart{
+    width:40%;
+    border:1px solid salmon;
+}

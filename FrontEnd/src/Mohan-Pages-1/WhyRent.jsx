@@ -79,7 +79,7 @@ const WhyRent = () => {
         {
           Question.length > 0 && Question.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <div className='Question'>{item}</div>
                 <div className='Answer'>{Answer[index]}</div>
               </div>

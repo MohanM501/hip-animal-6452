@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import { Button } from "@chakra-ui/react";
 
 import "./ProductDetails.css";
@@ -17,6 +17,9 @@ const ProductDetails = () => {
   const refundable_amount = 609;
   const [product,SetProduct]=useState(true);
   const [blue,setBlue]=useState("50");
+  const navigate=useNavigate();
+
+
 
   const imageLogo = "https://www.rentomojo.com/public/images/icons/info-line-icon.svg";
 
@@ -67,6 +70,12 @@ const ProductDetails = () => {
         }else{
           SetProduct(true);
         }
+  }
+
+  const GotoCart=()=>{
+      console.log("goto");
+      alert("Product has been added to the cart")
+      navigate("/checkout/cart");
   }
 
 
@@ -163,7 +172,7 @@ const ProductDetails = () => {
             </div>
 
           </div>
-          <div className="Book">
+          <div className="Book"  onClick={GotoCart}>
             <button>
               <img src="https://www.rentomojo.com/public/images/icons/cart-new.svg" alt="book-logo" />
               Book you plan
