@@ -1,0 +1,21 @@
+/* follow css */
+
+/* @media (max-width:320px){  - mobile version
+
+} */
+
+/* @media (min-width:321px) and (max-width:768px){  ---- tablet version
+
+} */
+
+/* @media(min-width:769px){  --- desktop version
+
+} */
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
+ }

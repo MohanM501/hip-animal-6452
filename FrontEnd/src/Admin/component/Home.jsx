@@ -1,7 +1,7 @@
 import "./Home.css";
 import "./Flickity.css";
-import { Box, Flex, Grid, GridItem ,Image, Text, useEnvironment} from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import { Box, Flex, Grid, GridItem ,Image, Text} from '@chakra-ui/react'
+import React from 'react'
 import Slider from "./Slider"
 // import { CenterMode } from "./CenterMode";
 import Flickity from 'react-flickity-component'
@@ -10,8 +10,6 @@ import p2 from "../assets/p2.png"
 import p3 from "../assets/p3.png"
 import p4 from "../assets/p4.png"
 import p5 from "../assets/p5.png"
-import {useDispatch,useSelector} from "react-redux"
-import {getAll} from "../Redux/AdminReducer/action"
 
 const flickityOptions = {
     cellAlign: 'left'
@@ -19,15 +17,6 @@ const flickityOptions = {
 
 
 const Home = () => {
-
-    const dispatch=useDispatch();
-    const data=useSelector((state)=>state.AdminReducer.products);
-
-    console.log(data)
-
-    useEffect(()=>{
-        dispatch(getAll())
-    },[])
   return (
     
     <Box>
@@ -151,7 +140,7 @@ happy subscribers<br/>______</strong><br/>Here's what they have to say about the
 
 
 
-            
+            <Box>rohit</Box>
     </Box>
     
   )

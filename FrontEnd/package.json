@@ -33,7 +33,7 @@
   },
   "scripts": {
     "server": "json-server --watch --port 8080 data.json",
-    "data": "json-server --watch --port 8080 data.json",
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
