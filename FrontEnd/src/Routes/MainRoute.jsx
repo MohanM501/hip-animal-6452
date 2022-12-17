@@ -6,7 +6,8 @@ import Furniture from '../Pages/Packages/Packagemiddle/Furniture';
 import ProductDetails from "../Mohan-Pages-1/ProductDetails"
 import Dashboard from '../Admin/Dashboard';
 import Wishlist from '../Pages/Wishlist';
-import Home from "../component/Home"
+import Home from "../component/Home";
+import MainCart from "../Mohan-Pages-2-checkout-cart/MainCart";
 // import Flutter from '../Components/Flutter';
 const MainRoute = () => {
   return (
@@ -20,6 +21,7 @@ const MainRoute = () => {
 
             {/* use routes here */}
             <Route path="/:city/:applianceType/:productname" element={<ProductDetails/>}/>
+            <Route path="/checkout/cart" element={<MainCart/>}/>
             <Route path='/admin/dashboard' element={<Dashboard />}></Route>
         </Routes>
     </div>

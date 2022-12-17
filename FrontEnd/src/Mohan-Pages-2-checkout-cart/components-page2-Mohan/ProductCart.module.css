@@ -1,0 +1,55 @@
+.prod_container{
+    border: 1px solid gold;
+    background-color: aqua;
+}
+
+.prod_image_name{
+    display: flex;
+    border:2px solid green;
+}
+
+.prod_image_name>img{
+    width:30%;
+}
+.second_part{
+    width:100%;
+}
+.name_delete{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent_deposit{
+    border:1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_cart{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count{
+    width:80%;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.Minus_Plus{
+    width: 20%;
+    font-size: 30px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}
+.count div:nth-child(2){
+    font-weight: 100;
+}
+.buttom_cart:nth-child(2){
+    width:20%;
+}
