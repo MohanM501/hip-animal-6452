@@ -30,7 +30,7 @@ const ProdDetails = () => {
 
   return (
     <div className="prod-container">
-
+      <img src="./Mohan-images/virusSafetyGreen.webp" alt="test"/>
       <div className="first-sect">
         <div>
           <img src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png" alt="some-log" />

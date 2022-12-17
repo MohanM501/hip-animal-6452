@@ -28,6 +28,9 @@
     .show-border1, .show-border2{
         padding: 15px;
         border:1px solid green;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
         
     }
     .hide-border{
@@ -35,6 +38,9 @@
         border-top: 4px solid red;
         align-self: center;
         padding: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
     }
     .why_rent div{
         width:100%;
@@ -88,6 +94,7 @@
         height: 25px;
         border: 1px solid blue;
         background-color: gray;
+        cursor: pointer;
     }
     .slider::-webkit-slider-thumb{
         -webkit-appearance: none; 
@@ -248,6 +255,12 @@
      .right-side{
          width:100%;
          height: auto;
+     }
+     .show-border1,.show-border2{
+         font-size: 16px;    
+     }
+     .hide-border{
+         font-size: 16px; 
      }
 }
 

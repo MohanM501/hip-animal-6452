@@ -73,6 +73,7 @@
 }
 #paragraph{
     font-size: 13px;
+    font-weight: 100;
 }
 
 .info-box{
@@ -86,6 +87,9 @@
 }
 #ul_size{
     padding-left: 20px;
+    font-size: 13px;
+    font-weight: 100;
+    padding-top:5px;
 }
 #material-heading{
     margin-top: 20px;
@@ -96,11 +100,15 @@
     display: flex;
     align-items: center;
     gap:10px;
+    font-size: 13px;
+    font-weight: 100;
+    padding-top:5px;
 }
 
 #features-points{
     padding-left: 20px;
     font-size: 13px;
+    font-weight: 100;
     
 }
 .features-points{

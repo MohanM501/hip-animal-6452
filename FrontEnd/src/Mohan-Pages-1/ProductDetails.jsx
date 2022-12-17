@@ -44,15 +44,15 @@ const ProductDetails = () => {
     // console.log(e.value, "valeue before");
 
     setBlue(e.value);
-    if (e.value > 25 && e.value <= 75) {
+    if (e.value > 38 && e.value <= 63) {
       e.value = 50;
       setBlue(50);
       setMonthlyRent("459");
-    } else if (e.value <= 25) {
+    } else if (e.value>=0 && e.value < 15) {
       e.value = 0;
       setBlue(0);
       setMonthlyRent("506");
-    } else if (e.value > 75) {
+    } else if (e.value > 85 && e.value <=100) {
       e.value = 100;
       setBlue(100);
       setMonthlyRent("519");

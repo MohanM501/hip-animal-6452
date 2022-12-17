@@ -30,8 +30,11 @@
 .relocate{
     display: flex;
     justify-content:space-between;
-    margin-top: 10px;
+    margin-top: 20px;
+    border-top: 1px dashed gray;
+    padding-left: 10px; 
 }
+
 .relocate img{
     width:100%;
     align-self: center;
@@ -43,6 +46,50 @@
 }
 .relocate-para{
     width: 80%;
+}
+.relocate-para div:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+.relocate-para div:last-child{
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#qanda{
+    font-size: 30px;
+    font-weight: 600;
+    
+    margin-top: 40px;
+    
+}
+
+#question_border_red{
+    border-top: 3px solid red;
+    width: 10%;
+    margin-bottom: 40px;
+}
+
+.QandA-container{
+    border: 1px solid gray;
+}
+
+.Question{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Answer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 @media (max-width:599px){
