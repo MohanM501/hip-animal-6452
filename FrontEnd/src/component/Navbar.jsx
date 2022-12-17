@@ -39,7 +39,7 @@ useEffect(()=>{
 
  <Popover placement='top-start' >
   <PopoverTrigger >
-    <Button>{city}</Button>
+    <Button bg="white">{city}</Button>
   </PopoverTrigger>
   <PopoverContent w="1000px" m="center">
   <Input  mt="40px" w="99%" m="center" textAlign="center" type='text' placeholder=''  outline="none" border="1px solid black" borderRadius='10px' />
