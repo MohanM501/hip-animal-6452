@@ -32,7 +32,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --watch --port 8080 data.json",
+    
     "data": "json-server --watch --port 8080 data.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
