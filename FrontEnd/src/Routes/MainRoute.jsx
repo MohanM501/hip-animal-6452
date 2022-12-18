@@ -9,6 +9,8 @@ import Wishlist from '../Pages/Wishlist';
 import Home from "../component/Home";
 import single from '../Pages/single';
 import MainCart from "../Mohan-Pages-2-checkout-cart/MainCart";
+import Navbar from '../component/Navbar';
+
 // import Flutter from '../Components/Flutter';
 const MainRoute = () => {
   return (
