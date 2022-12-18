@@ -2,7 +2,7 @@ import React from 'react';
 import { DrawerExample } from './DrawerChakra';
 import styles from "./OrderSummary.module.css";
 
-const {orderSummary,firstline,payable,payableNow,payableMonthly,refundable,button_proceed}=styles;
+const {orderSummary,firstline,payable,payableNow,payableMonthly,refundable,button_proceed,pay_head}=styles;
 
 const refundable_deposit=639;
 const grandTotal=refundable_deposit+247;
@@ -22,7 +22,7 @@ const OrderSummary = () => {
       </div>
       <div className={payable}>
         <div className={payableNow}>
-            <div>Payable Now</div>
+            <div className={pay_head}>Payable Now</div>
             <div className={refundable}>
               <div>Refundable Deposit</div>
               <div>₹ {refundable_deposit}</div>
@@ -39,7 +39,7 @@ const OrderSummary = () => {
             </div>
         </div>
         <div className={payableMonthly}>
-              <div>Monthy Payable</div>
+              <div className={pay_head}>Monthy Payable</div>
               <div className={refundable}>
                 <div>Products Rent</div>
                 <div>₹ {productRent}/mo</div>
