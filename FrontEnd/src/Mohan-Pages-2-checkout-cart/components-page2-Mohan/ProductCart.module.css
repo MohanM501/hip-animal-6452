@@ -1,11 +1,16 @@
 .prod_container{
-    border: 1px solid gold;
+    border: 0px solid gold;
     background-color: aqua;
+    margin: 10px;
+    margin-top: 20px;
+
 }
 
 .prod_image_name{
     display: flex;
-    border:2px solid green;
+    border:0px solid green;
+    padding: 10px;
+    gap:10px;
 }
 
 .prod_image_name>img{
@@ -16,21 +21,27 @@
 }
 .name_delete{
     width: 100%;
-    border: 1px solid red;
+    border: 0px solid red;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+}
+.name_delete>img{
+    cursor: pointer;
 }
 
 .rent_deposit{
-    border:1px solid green;
+    border:0px solid green;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 .bottom_cart{
     width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .count{
@@ -46,6 +57,7 @@
     border: 1px solid gray;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .count div:nth-child(2){
     font-weight: 100;
@@ -53,3 +65,17 @@
 .buttom_cart:nth-child(2){
     width:20%;
 }
+.cartNo{
+    background-color: aqua;
+    position: absolute;
+    top:10px;
+    right:320px;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

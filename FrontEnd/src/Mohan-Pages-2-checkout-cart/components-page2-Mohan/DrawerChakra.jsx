@@ -23,10 +23,10 @@ function DrawerExample() {
     const btnRef = React.useRef();
     const grandTotal = 889;
     const style = {
-        marginTop: "80px", width: "80%", border: "1px solid green", backgroundColor: "red", padding: "15px", display: "flex", justifyContent: "space-between", cursor: "pointer"
+        marginTop: "140px", width: "85%", border: "1px solid green", backgroundColor: "red", padding: "35px 15px 35px 15px", display: "flex", justifyContent: "space-between", cursor: "pointer",color:"white",fontSize:"13px"
     }
-    const handleOpen = () => {
-
+    const handlePhonePay = () => {
+        window.open("https://mercury-t2.phonepe.com/transact/v2?token=ZTA3NmMxYmZmZDAwNmUwZDUxMWRiMjQ2ZmQ5NmYyNzQ4NjU1YWE3MmZiZmE2NWNlNzA5YzFiNzBiMGMxNzdlYjlhZDg3YTFmMDIyNjlmNTQ5ZTYyMTYxNzJiNGRmNTNiZGFjZjUyNDVkZDo1MTg0ODg5MWY5ODY3YTMwOTQyZTliMzgyMzZjYTM1YQ")
     }
 
     return (
@@ -58,7 +58,7 @@ function DrawerExample() {
 
                     <DrawerBody color='black'>
                         <Input placeholder='Type here...' />
-                        <div>
+                        <div style={{marginBottom:"10px"}}>
                             Total Amount Payable
                         </div>
                         <Heading>
@@ -77,18 +77,25 @@ function DrawerExample() {
                         <Text>
                             Net Banking , Debit Card, {"&"} Credit Card
                         </Text>
-                        <div style={{display:"flex",alignItems:"center",cursor:"pointer"}}>
+                        <div style={{display:"flex",justifyContent:"space-around",alignItems:"center",cursor:"pointer"}}>
                             <img width="150px" src="https://www.rentomojo.com/public/images/cart/payment/razorpay.png" alt="net-banking" />
                             <div>Credit card/Debit card/ Netbanking</div>
+                            <div style={{width:"40px",fontSize:"40px"}}>{">"}</div>
+                        </div>
+                        <br/>
+                        <Text>Wallets</Text>
+                        <div onClick={handlePhonePay} style={{display:"flex",justifyContent:"space-around",alignItems:"center",cursor:"pointer"}}>
+                            <img width="150px" src="https://www.rentomojo.com/public/images/cart/payment/phonepe.png" alt="net-banking" />
+                            <div>Pay via Phone Pay</div>
                             <div style={{width:"40px",fontSize:"40px"}}>{">"}</div>
                         </div>
                     </DrawerBody>
 
                     <DrawerFooter>
-                        <Button color='black' variant='outline' mr={3} onClick={onClose}>
+                        <Button color='black' backgroundColor="aqua" variant='outline' mr={3} onClick={onClose}>
                             Cancel
                         </Button>
-                        <Button colorScheme='blue'>Save</Button>
+                        
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>

@@ -14,6 +14,7 @@ const MainCart = () => {
     if(loading){
         return <h2>....Loading.....</h2>
     }
+    
 
     return (
         <div className={parent}>
