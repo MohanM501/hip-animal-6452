@@ -15,7 +15,7 @@ export default class slider extends Component {
       slidesToScroll: 1 
     }; 
     return ( 
-<Box >
+<Box mt="90px" >
 <Box mt="30px" ml="90px" w="90%"  h="auto"  borderRadius="20px"  justifyContent="center">
        <Slider {...settings}  >
       

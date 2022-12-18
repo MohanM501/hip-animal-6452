@@ -1,17 +1,40 @@
 import "./Home.css";
-import { Box, Flex, Grid, GridItem ,Image, Text} from '@chakra-ui/react'
-import React from 'react'
+import "./Flickity.css";
+import { Box, Flex, Grid, GridItem ,Image, Text, useEnvironment} from '@chakra-ui/react'
+import React, { useEffect } from 'react'
 import Slider from "./Slider"
-import { CenterMode } from "./CenterMode";
+// import { CenterMode } from "./CenterMode";
+import Flickity from 'react-flickity-component'
+import p1 from "../assets/p1.png"
+import p2 from "../assets/p2.png"
+import p3 from "../assets/p3.png"
+import p4 from "../assets/p4.png"
+import p5 from "../assets/p5.png"
+import {useDispatch,useSelector} from "react-redux"
+import {getAll} from "../Redux/AdminReducer/action"
+
+const flickityOptions = {
+    cellAlign: 'left'
+}
+
 
 const Home = () => {
+
+    const dispatch=useDispatch();
+    const data=useSelector((state)=>state.AdminReducer.products);
+
+    console.log(data)
+
+    useEffect(()=>{
+        dispatch(getAll())
+    },[])
   return (
     
-    <Box>
+    <Box >
             <Slider/>
 
 
-           <Grid templateColumns='repeat(6,1fr)' h="150px" w="90%"   mt="50px" ml="90px" gap="15px">
+           <Grid templateColumns='repeat(6,1fr)' h="150px" w="90%"   mt="90px" ml="90px" gap="15px">
             <GridItem border="00.5px solid black" borderRadius="15px"  className='product' >
                 <Image    mt="18%" ml="35%" h="50px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAZlBMVEX///8AAAD8/Pzp6elbW1sTExPx8fGIiIj4+PjMzMwtLS3l5eW2trbd3d1YWFjX19dGRkZwcHCcnJw7OzvBwcFLS0skJCSBgYGsrKxnZ2eVlZUNDQ0ZGRlhYWFTU1MfHx94eHg0NDQxOw9tAAAFKElEQVRoge2a6ZKrKhCA3YWIcY24ZDHv/5JHpCEqOjGJMfdW0X+mJqAf0AtIt2Fo0aJFixYtWrS8JFZg/ZCeU9M0af4TtpcnppAk9/aF23l16Mnuye3/Hqrc3guO8qTooU1WhlZYZk3/X5Hk6Ptwi4hlP5UB/BaUJ6EI8lVzDIgjVH4eWx0qK2hwyJcUEZDruSfcuOrvaThq98iFt5+vJFh4x9vilQ7AjySwScxVfiRjuw/I8caHcCk39AhPXdww5cNpWjzua5ML9K22GUJQXvn7bu3YuDAFUB2Nn7BICy3X8kNFdM4lg4wfTltRDuuSTTkobwvRpDy2UqwgvfLgcgfDO5WKaQcpd73bZRoCu/h45yHqmr6xSQQ1uJrLgmtYcptvEjXYR5SP7kCnM+2G4ILd1C8pIkzFstNcDB37Qg+R0j8HhWfpdIGsXFhJlq5URFSD6u50YttixylUs0IlmP2JKFaP6R2em1rqjCDOaGKKZ6K5Dc7QhRhlpoEfc0qFp0NAmELESJ5tETY47+JihT6fTdFGU6tCuOXhJ/bDaVsIrvIsONvC3a6KLqVgUPe9VrogchWuP5ipnV7Fa1fwMzDoLsIv6ovAdGLVJb2U68G8cNuNUlD/mWar+BcDRW0mh7Dgu17NPd91lMOPFfr88RvFAp61ETIuq/gOI3q4hSdPfjhvNCiiPCpkVFG3h6u7KeXe9iZpOev5Rm+1DQyhXjBHL3eEtUwXIRDnlEZ60ot8JtiHYHCu8fwDXgnqdgbbE67PYu6Dx97gG8zhAND4cyHBYLEarKXF1nDZ4rpzx0G/9/jdG+UQMqrEFt4DJ2AKNYWxxH5ncIdN+OzRqD7IIcx6hE2kj3d7Uc3dZjM+kygtpCJmmnEN8OIRNjblG8NA1o4O+0jsgJ0Md+it+f2p5AjTTOCTxxbfI+YxbUcG/wU+e013KoOvru5skoPluexjyPB34DMJhdeDxHDM24tvsMAjTtqDw/6O/H4IHX10zN+Xbxiu6Y7+35lvdfxR7zHfLn7I98reUX/Dl9HY+QHfy6tCnDuGrfvwUzgVudX0YLYPH0Kx+h2yH/9Szh5UduCXbBNaunfYgW9EylF4X/6fvTVf8zVf8zVf8zVf8zVf8zX/v8kPnueKvsmPGpY9ffbuWb4VLJRjvMIn05uttfz+Wqz6mI/ElzT98zZ0woc7FzP+mG+wNFd/i/FX2nLEH9yAb8JnWZzk0K6bv51f4M4lwZvx2RD+7A18S1z4nB12J/0h//iki8K34CLW4Xcu1hLfOK7Mf87mF5b5Acu6VqVctnk+T6A/43ugxXop7zjDtwvz9nivFal8K6rvPGnwtCbEFsmsa/28bEHyD9DVCvq06Ijf/QaOkakJ4zmJaihbULOKi/z+wssWuRH66OKJlI27IvsvBfs3GIKaYJ7ls9oASEmcHyBbFs+sNin56kiULcTL5UwPvigByx7lGQGBAd3pKmNSROagi6WiLsk3xX2vUJhNnGL62ztDyCueTG1mq+uG/OZRhYjyBJ5S7oBfFyRqDcxWKb7hfBSzyjs5PJkLrMhGBYGPor/JKsj4K/SLZFXmxqWA3bYOZUZDfY73385e+NX7tuVvQoISimgyKioiBnwUQua7iT+tOlsWUYfVRbJwxA9F1Dy8XW+2UkTFmemyNHeff4tSiJen9GszHwjEeObbHdgVFS6nFfvFVoIi/1EYCGFvh+LboViYwqqb7kJJxNelP1K8vLNsKb+tf9eiRYsWLVq0/C/lHyBqR/HFgveKAAAAAElFTkSuQmCC"/>
                 <Text ml="30%">Packages</Text>
@@ -43,15 +66,37 @@ const Home = () => {
             </GridItem>
            </Grid>
 
-            <Grid mt="50px" bg="#fafafa" border="1px solid black" h="750px">
-                <GridItem border="1px solid green" h="200px">
-                    <Text border="1px solid red" paddingTop="40px" fontSize='xl'  textAlign='center' h="90px" w="200px" mt="90px" ml="90px" ><strong>You'll love to<br/>
-take these home</strong></Text>
+            <Grid mt="50px" bg="#fafafa"  h="300px">
+                <GridItem  h="200px">
+                    <Text  paddingTop="40px" fontSize='xl'  textAlign='center' h="90px" w="200px" mt="20px" ml="70px" ><strong>You'll love to<br/>
+take these home</strong><br/>______</Text>
 
                 </GridItem>
 
                 
                 <GridItem border="1px solid black" h="550px">
+                <Flickity
+      className={'carousel'} // default ''
+      elementType={'div'} // default 'div'
+      options={flickityOptions} // takes flickity options {}
+      disableImagesLoaded={false} // default false
+      reloadOnUpdate // default false
+      static // default false
+         >
+    <Grid templateColumns='repeat(6,1fr)'    >
+    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
+    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
+    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
+    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
+    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
+      
+    
+      
+    
+    </Grid>
+    </Flickity>
+
+
 
                 {/* <CenterMode/> */}
                 </GridItem>
@@ -63,41 +108,72 @@ take these home</strong></Text>
     
 
 
-<Box border="1px solid black" h="800px" w="100%" mt="80px">
-<Box border="1px solid black" h="120px" w="270px" mt="80px"><Text p="50px" fontSize="xl"><strong>There's more<br/>
-to renting</strong></Text></Box>
+<Box  h="800px" w="80%" mt="80px" ml="90px">
+<Box  h="120px" w="270px" mt="80px"><Text p="50px" fontSize="xl"><strong>There's more<br/>
+to renting<br/>____</strong></Text></Box>
 
-<Grid templateColumns='repeat(3,1fr)' border="1px solid red" h="500px" w="100%"    mt="30px" gap="15px">
+<Grid templateColumns='repeat(3,1fr)'  h="500px" w="100%"    mt="30px" gap="15px" textAlign="left">
  
-    <GridItem border="1px solid red" h="250px" pr='80px' >
-        <Image mt="18%" ml="35%" border="1px solid black" h="50px"   src="https://cdn.iconscout.com/icon/premium/png-128-thumb/bed-1810992-1537291.png"/>
+    <GridItem  h="250px"  >
+        <Image mt="12%" ml="50px"  h="70px" w="60px"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNCutjxdbP2v2y8-EEIsKqCn441-6xqp9giGtGY8k4ycTxwMxbDw12CfasNJSoGTrqag&usqp=CAU"/>
+        <Text ml="50px"><strong>Finest-quality products</strong></Text>
+        <Text ml="50px">Quality matters to you, and us! That's why we do a  strict quality-check for every product.</Text>
     </GridItem>
 
-    <GridItem border="1px solid red" h="250px" >
-
+    <GridItem  h="250px"  >
+    <Image mt="12%" ml="50px"  h="70px" w="60px"  src= "data:image/png;base64,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"/>
+        <Text ml="50px"><strong>Free relocation</strong></Text>
+        <Text ml="50px">Changing your house or even your city? We'll relocate your rented products for free.</Text>
     </GridItem>
 
-    <GridItem border="1px solid red" h="250px" >
-
+    <GridItem  h="250px"  >
+    <Image mt="12%" ml="50px"  h="70px" w="60px"   src="https://as1.ftcdn.net/v2/jpg/02/09/56/90/1000_F_209569029_b12HWW6gNISjXqZnEJUbAyOP78kvzNRQ.jpg"/>
+        <Text ml="50px"><strong>Free maintenance</strong></Text>
+        <Text ml="50px">Keeping your rented products in a spick and span condition is on us, so you can sit back and relax.</Text>
     </GridItem>
 
-    <GridItem border="1px solid red" h="250px"  >
-
+    <GridItem  h="250px"  >
+    <Image mt="12%" ml="50px"  h="70px" w="60px"   src="https://thumbs.dreamstime.com/b/fake-profile-rgb-color-icon-identity-fraud-non-existing-person-representation-social-media-illegal-activity-financial-gain-213729798.jpg"/>
+        <Text ml="50px"><strong>Cancel anytime</strong></Text>
+        <Text ml="50px">Pay only for the time you use the product and close your subscription without any hassle.</Text>
     </GridItem>
 
-    <GridItem border="1px solid red" h="250px"  >
-
+    <GridItem  h="250px"  >
+    <Image mt="12%" ml="50px"  h="70px" w="60px"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNCutjxdbP2v2y8-EEIsKqCn441-6xqp9giGtGY8k4ycTxwMxbDw12CfasNJSoGTrqag&usqp=CAU"/>
+        <Text ml="50px"><strong>Easy return on delivery</strong></Text>
+        <Text ml="50px">If you don't like the product on delivery, you can return it right away—no questions asked.</Text>
     </GridItem>
 
-    <GridItem border="1px solid red" h="250px"  >
-
+    <GridItem  h="250px"  >
+    <Image mt="12%" ml="50px"  h="70px" w="60px"   src="https://cdn.vectorstock.com/i/1000x1000/61/12/outline-beautiful-phone-cover-icon-vector-21286112.webp"/>
+        <Text ml="50px"><strong>Keep upgrading</strong></Text>
+        <Text ml="50px">Bored of the same product? Upgrade to try another, newer design and enjoy the change!</Text>
     </GridItem>
 </Grid>
 </Box>
 
+<Box ml="50px" mb="60px"  h="120px" w="280px"><Text fontSize="x-large"><strong>Over 1.5 lac<br/>
+happy subscribers<br/>______</strong><br/>Here's what they have to say about their RentoMojo experience.</Text></Box>
+<Flickity
+      className={'carousel'} // default ''
+      elementType={'div'} // default 'div'
+      options={flickityOptions} // takes flickity options {}
+      disableImagesLoaded={false} // default false
+      reloadOnUpdate // default false
+      static // default false
+    >
+      <Image src={p1}/>
+      <Image src={p2}/>
+      <Image src={p3}/>
+      <Image src={p4}/>
+      <Image src={p5}/>
+      <Image src={p1}/>
+    </Flickity>
 
 
-            <Box>rohit</Box>
+
+
+            
     </Box>
     
   )

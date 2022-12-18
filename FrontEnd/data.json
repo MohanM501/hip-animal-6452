@@ -271,7 +271,8 @@
       
   }
    ],
-  "packagetype":[{
+  "packagetype":[
+    {
       "id": 1,
       "image":"https://www.rentomojo.com/public/images/category/package-bg/studio-apartment.jpg",
       "icon":"https://www.rentomojo.com/public/images/category/icons/studio-apartment.svg",
@@ -294,5 +295,88 @@
       "title":"2BHK",
       "type":"2 BHK",
       "No_of_package":"1 Package(s)"
-}]
+}],
+
+  "Citys" :[ {
+      "id": 1,
+      "name": "Bangaluru",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1c504038542117.5765973d2c44e.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mumbai",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Pune",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f70aaf38542117.5765973d2cb73.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Delhi",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Noida",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ba20f38542117.5765973d219f3.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Gurgaon",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Kolkata",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1c504038542117.5765973d2c44e.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Hyderabad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "name": "Chennai",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 10,
+      "name": "Ahmedabad",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f70aaf38542117.5765973d2cb73.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Mysore",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Jaipur",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Faridabad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 14,
+      "name": "Ghaziabad",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Gandhinagar",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvtgyvWopFJgCFmXKysIaVo_1jMyAkRGhsw&usqp=CAU"
+    },
+    {
+      "id": 16,
+      "name": "Chandigarh",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b1feb538542117.5765973d2db6e.jpg"
+    }
+  ]
+
 }

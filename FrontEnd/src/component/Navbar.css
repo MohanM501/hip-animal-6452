@@ -8,6 +8,19 @@
      background-color: rgb(255,255,255);
      
 }
+/* .pop{
+  position: absolute;
+  z-index: 100;
+} */
+/* .poop{
+  position: ;
+  z-index: 100;
+} */
+.navbar{
+  position: fixed;
+  z-index: 1000;
+}
+
 .topnav{
     padding-top: 0.5%;
 }

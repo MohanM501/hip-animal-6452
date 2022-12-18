@@ -1,0 +1,284 @@
+.product-details-main{
+     color: black; 
+    background-color: white;
+    width:auto;
+    height:auto;
+}
+
+
+ 
+    .middle-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap:8px;
+        border: 1px solid red;
+        padding:20px;
+    }
+    .left-side{
+       
+        width:70%;
+    }
+    .why_rent{
+        display: flex;
+        justify-content: space-around;
+       
+        text-align: left;
+    }
+    .show-border1, .show-border2{
+        padding: 15px;
+        border:1px solid green;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        
+    }
+    .hide-border{
+        border-bottom:1px solid white;
+        border-top: 4px solid red;
+        align-self: center;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .why_rent div{
+        width:100%;
+        
+    }
+    .hide-why,.hide-prod{
+            display: none;
+    }
+    
+    .right-side{
+        padding: 20px 0px 20px 0px;  
+        width:30%;
+        height: 600px;
+        position: sticky;
+        top:0px;
+        border: 1px solid green;
+        
+    }
+    .right-side div:nth-child(1){
+        padding-left: 25px;
+    }
+    #how_long{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
+        opacity: 0.6;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #how_long img{
+        width:20px;
+        height:20px;
+    }
+    #slider_product{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        border: 1px solid yellow;
+    }
+    .slider {
+        -webkit-appearance: none; 
+        border-radius: 5px;
+        width:85%;
+        align-self: center;
+        height: 25px;
+        border: 1px solid blue;
+        background-color: gray;
+        cursor: pointer;
+    }
+    .slider::-webkit-slider-thumb{
+        -webkit-appearance: none; 
+        background-color: white;
+        width:25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 5px solid red;
+    }
+    .slider-bottom{
+        display: flex;
+        border:0px solid green;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .slider-months{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        border:0px solid blue;
+    }
+    .slider-months div{
+        margin-left: -20px;
+        border:0px solid red;
+        display: flex;
+        justify-content: center;
+    }
+    .month-refund{
+        width: 100%;
+        display: flex;
+        border: 1px solid blue;
+        justify-content: center;
+        margin-top: 20px;
+     
+    }
+    .monthly-rent{
+        border:1px solid gray;
+        width:45%;
+        text-align: left;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding:10px 0px 10px 0px;
+    }
+    /* .monthly-rent h2{
+        border: 1px solid red;
+        width: 100%;
+    } */
+    .refundable-deposit{
+        border:1px solid gray;
+        width: 45%;
+        text-align: left;
+        align-self: center;
+        padding:10px 0px 10px 0px;
+        padding-left: 5%;
+        
+    }
+    .month-img-div{
+        display: flex;
+        gap:5px;
+        font-size: 12px;
+    }
+    .month-img{
+        width:15px;
+    }
+    .month-number{
+        font-size: 20px;
+    }
+   #mo{
+       font-size: 12px;
+   }
+    .month-below-parent{
+        display: flex;
+        border: 1px solid brown;
+        justify-content: center;
+        
+    }
+    .month-below-div{
+        width: 90%;
+        border: 1px solid green;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,80px);
+       
+    }
+    .month-below{
+        display: flex;
+        font-size: 12px;
+        width: 100%;
+        border: 1px solid brown;
+        text-align: left; 
+        gap:5px;
+        padding:10px 0px 10px 0px;
+        
+    }
+    #hide-this{
+        display: none;
+    }
+    .month-below-div div:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aquamarine;
+    }
+    .Compare{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .Compare>button{
+        width:90%;
+        border: 1px solid aqua;
+        border-radius: 5px;
+        color:aqua;
+        padding:5px 0px 5px 0px;
+    }
+    .delivery-center{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .delivery{
+        width: 95%;
+        display: flex;
+        gap:10px;
+    }
+    .Book{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+    .Book button{
+        width:90%;
+        border:1px solid red;
+        background-color: red;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        font-size: 20px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 5px;
+    }
+    
+
+
+@media (max-width:599px){  
+     .middle-section{
+         display: flex;
+         flex-direction: column;
+        
+     }
+     .left-side{
+         width:100%;
+     }
+     .right-side{
+         width:100%;
+         height: auto;
+     }
+     .show-border1,.show-border2{
+         font-size: 16px;    
+     }
+     .hide-border{
+         font-size: 16px; 
+     }
+}
+
+@media (min-width:600px) and (max-width:768px){  
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-side{
+        width:100%;
+    }
+    .right-side{
+        width:100%;
+        height: auto;
+    }
+}
+
+/* background: linear-gradient(90deg,rgb(117,252,117) 60%, rgba(214,214,214) 60%); */
+
+

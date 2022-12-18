@@ -19,6 +19,7 @@
     "mdb-react-ui-kit": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-flickity-component": "^4.0.0",
     "react-icons": "^4.7.1",
     "react-phone-input-2": "^2.15.1",
     "react-redux": "^8.0.5",
@@ -32,8 +33,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    
-    "data": "json-server --watch --port 8080 data.json",
+    "server": "json-server --watch --port 8080 data.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
