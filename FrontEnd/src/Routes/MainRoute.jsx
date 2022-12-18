@@ -7,6 +7,8 @@ import ProductDetails from "../Mohan-Pages-1/ProductDetails"
 import Dashboard from '../Admin/Dashboard';
 import Wishlist from '../Pages/Wishlist';
 import Home from "../component/Home"
+import Navbar from '../component/Navbar';
+
 // import Flutter from '../Components/Flutter';
 const MainRoute = () => {
   return (
