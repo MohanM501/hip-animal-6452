@@ -18,10 +18,10 @@ import { useDisclosure } from '@chakra-ui/react';
 
 import React from "react";
 
-function DrawerExample() {
+function DrawerExample({grandTotal}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef();
-    const grandTotal = 889;
+    
     const style = {
         marginTop: "140px", width: "85%", border: "1px solid green", backgroundColor: "red", padding: "35px 15px 35px 15px", display: "flex", justifyContent: "space-between", cursor: "pointer",color:"white",fontSize:"13px"
     }
