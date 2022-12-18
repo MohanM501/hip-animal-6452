@@ -21,7 +21,7 @@ const MainRoute = () => {
             <Route path="/package" element={<Package/>}></Route>
             <Route path="/furniture" element={<Furniture/>}></Route>
             <Route path="/wishlist" element={<Wishlist/>}></Route>
-            <Route path="/single" element={<single/>}></Route>
+            {/* <Route path="/single" element={<single/>}></Route> */}
 
             {/* use routes here */}
             <Route path="/:city/:applianceType/:productname" element={<ProductDetails/>}/>
