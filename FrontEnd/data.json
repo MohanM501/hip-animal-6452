@@ -271,7 +271,8 @@
       
   }
    ],
-  "packagetype":[{
+  "packagetype":[
+    {
       "id": 1,
       "image":"https://www.rentomojo.com/public/images/category/package-bg/studio-apartment.jpg",
       "icon":"https://www.rentomojo.com/public/images/category/icons/studio-apartment.svg",

@@ -7,6 +7,7 @@ import ProductDetails from "../Mohan-Pages-1/ProductDetails"
 import Dashboard from '../Admin/Dashboard';
 import Wishlist from '../Pages/Wishlist';
 import Home from "../component/Home";
+import single from '../Pages/single';
 import MainCart from "../Mohan-Pages-2-checkout-cart/MainCart";
 import Navbar from '../component/Navbar';
 
@@ -20,6 +21,7 @@ const MainRoute = () => {
             <Route path="/package" element={<Package/>}></Route>
             <Route path="/furniture" element={<Furniture/>}></Route>
             <Route path="/wishlist" element={<Wishlist/>}></Route>
+            {/* <Route path="/single" element={<single/>}></Route> */}
 
             {/* use routes here */}
             <Route path="/:city/:applianceType/:productname" element={<ProductDetails/>}/>
