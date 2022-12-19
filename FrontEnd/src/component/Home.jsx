@@ -1,6 +1,6 @@
 import "./Home.css";
 import "./Flickity.css";
-import { Box, Flex, Grid, GridItem ,Image, Text, useEnvironment} from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem ,Image, Text, useEnvironment} from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import Slider from "./Slider"
 // import { CenterMode } from "./CenterMode";
@@ -10,6 +10,7 @@ import p2 from "../assets/p2.png"
 import p3 from "../assets/p3.png"
 import p4 from "../assets/p4.png"
 import p5 from "../assets/p5.png"
+import {TbCurrencyRupee} from "react-icons/tb"
 import {useDispatch,useSelector} from "react-redux"
 import {getAll} from "../Redux/AdminReducer/action"
 import Navbar from "./Navbar";
@@ -25,8 +26,8 @@ const Home = () => {
 
     const dispatch=useDispatch();
     const data=useSelector((state)=>state.AdminReducer.products);
-
-    console.log(data)
+    const productdata=useSelector((state)=>state.Product.furniture);
+   
 
     useEffect(()=>{
         dispatch(getAll())
@@ -72,7 +73,7 @@ const Home = () => {
             </GridItem>
            </Grid>
 
-            <Grid mt="50px" bg="#fafafa"  h="300px">
+            <Grid mt="50px" bg="#fafafa"  h='550px'>
                 <GridItem  h="200px">
                     <Text  paddingTop="40px" fontSize='xl'  textAlign='center' h="90px" w="200px" mt="20px" ml="70px" ><strong>You'll love to<br/>
 take these home</strong><br/>______</Text>
@@ -80,7 +81,7 @@ take these home</strong><br/>______</Text>
                 </GridItem>
 
                 
-                <GridItem border="1px solid black" h="550px">
+                <GridItem >
                 <Flickity
       className={'carousel'} // default ''
       elementType={'div'} // default 'div'
@@ -88,18 +89,192 @@ take these home</strong><br/>______</Text>
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
       static // default false
-         >
-    <Grid templateColumns='repeat(6,1fr)'    >
-    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
-    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
-    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
-    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
-    <Image border='1px solid red'  src="https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg"/>
-      
-    
-      
-    
+       gap='20px'>
+    <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/7i306dfx-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Hutch Metal Queen Hydr..</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Flex display='flex'><Text><TbCurrencyRupee/>1319/mo</Text></Flex>
+                
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
     </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+
+<Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/j1prianw-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Hutch Metal Queen Hydr..</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>549/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+ <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/ikl0fdjc-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Poise Wooden Queen Bed.</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>249/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+ <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/vmepbpv0-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Napster Metal Single Bed</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>319/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+ <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/a9r2ys6j-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Aurora WoodenQueen Bed</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>539/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+ <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/0npj0a1d-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Kipper Wooden Single Bed..</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>609/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+
+<Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/q78gxtvn-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Hiber Wooden Single Stora..</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>479/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+ <Box  h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/h98dzvch-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Single Foam Mattress</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>149/mo</Text>
+            </GridItem>
+            <GridItem mt='15px'>
+        <Button  color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+
+<Box h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/zsz8bpr7-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>Queen Foam Mattress</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'  h='60px' w='99%'>
+            <GridItem  >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>259/mo</Text>
+            </GridItem>
+            <GridItem mt='15px' >
+        <Button border='1px solid red' color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+<Box h='350px' w='18%' ml='90px'> 
+<Grid  >
+    <GridItem   h='220px' ml='10px' w='90%'>
+        <Image src='https://p.rmjo.in/productSquare/63ua3tco-500x500.jpg'/>
+        <Text  h='47px' mt='20px'><strong>King Coir & Foam Mattress</strong></Text>
+        <Grid templateColumns='repeat(2,1fr)'   h='60px' w='99%'>
+            <GridItem >
+                <Text>Rent</Text>
+                <Text><TbCurrencyRupee/>359/mo</Text>
+            </GridItem>
+            <GridItem mt='15px' >
+        <Button border='1px solid red' color='orange.300'>See More</Button>
+</GridItem>
+    </Grid>
+    </GridItem>
+    
+</Grid>
+</Box>
+
     </Flickity>
 
 
