@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem ,Heading,Image} from '@chakra-ui/react'
+import { Box, Grid, GridItem ,Heading,Image, SkeletonCircle, SkeletonText} from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
@@ -54,7 +54,10 @@ const Package = () => {
         <Heading ml={"50px"} mb="10px">Choose by Room Type</Heading>
         {
            
-            Loading && "loading............."
+            Loading ? <Box padding='6' boxShadow='lg' bg='white'>
+                        <SkeletonCircle size='30' />
+                <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='4' />
+                    </Box>:""
         }
         {
             error && "Something wrong"
@@ -102,7 +105,10 @@ const Package = () => {
         <Heading ml={"50px"} mb="10px">Choose by Apartment Type</Heading>
         {
            
-            Loading && "loading............."
+           Loading ? <Box padding='6' boxShadow='lg' bg='white'>
+           <SkeletonCircle size='30' />
+   <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='4' />
+       </Box>:""
         }
         {
             error && "Something wrong"

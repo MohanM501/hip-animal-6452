@@ -1,10 +1,10 @@
-import { Box, Flex, Grid, GridItem, Heading,Image,Input,Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem, Heading,Image,Input,Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import {BsFillHeartFill} from "react-icons/bs"
 import { addtowishlist, Getfurniturn } from '../../Redux/Package/action'
-import single from '../../Pages/single'
+// import single from '../.. /Pages/single'
 const AllFurniture = ({getval}) => {
    
 const dispatch=useDispatch()
@@ -57,9 +57,7 @@ console.log(wish,"wh")
   
   
 const handlesingle=(el)=>{
-  <single data={el}/>
-
-
+  // <data={el}/>
 }
 
   // console.log("cat",category)
@@ -114,9 +112,10 @@ const handlesingle=(el)=>{
     
   return (
     <Box  mt="100px" mb="100px">
-      <Link to="/wishlist">abc</Link>
-    <Heading ml={"5%"} mb="10px">{title}</Heading>
-    
+      <Flex>
+        <Heading ml={"5%"} mb="10px">{title}</Heading>
+        <Link  to="/wishlist"> <Button textAlign="left" ml="34px" colorScheme='blue'>Wishlist</Button></Link>
+    </Flex>
     {/* {
        
         Loading && "loading............."

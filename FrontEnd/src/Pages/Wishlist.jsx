@@ -38,7 +38,7 @@ const [category,setcategory]=useState(searchParams.getAll("genre")||[])
   
     return (
       <Box  mt="100px" mb="100px">
-      <Link to="/furniture">abc</Link>
+      {/* <Link to="/furniture">abc</Link> */}
    
     <Grid className='maingrid' >
         
