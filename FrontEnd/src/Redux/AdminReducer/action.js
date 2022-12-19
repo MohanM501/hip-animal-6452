@@ -2,6 +2,7 @@ import axios from "axios"
 import * as types from "./actionType"
 
 const getAll=(query)=>(dispatch)=>{
+    console.log(query)
     dispatch(({type:types.GET_PRODUCTS_REQUEST}))
     axios.get(`https://victorious-shoe-frog.cyclic.app/products`,query)
     .then((res)=>{

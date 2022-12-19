@@ -2,9 +2,12 @@ import { Box, Grid, GridItem ,Heading,Image, SkeletonCircle, SkeletonText} from 
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
+import Footer from '../../../component/Footer'
+import Navbar from '../../../component/Navbar'
 import { Getfurniturn, Getpackage } from '../../../Redux/Package/action'
 import { Getpackagetype } from '../../../Redux/PackageType/action'
 import "./package.css"
+
 const Package = () => {
     const dispatch=useDispatch()
     const location =useLocation()
@@ -50,7 +53,8 @@ const Package = () => {
 
   return (
     <Box>
-        <Box  mt="200px" mb="100px">
+        <Navbar/>
+        <Box mt="90px" mb="100px">
         <Heading ml={"50px"} mb="10px">Choose by Room Type</Heading>
         {
            
@@ -148,7 +152,7 @@ const Package = () => {
             
         </Grid>
         </Box>
-
+        <Footer/>
     </Box>
   )
 }
