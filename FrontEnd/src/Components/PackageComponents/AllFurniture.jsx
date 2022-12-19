@@ -113,8 +113,8 @@ const handlesingle=(el)=>{
     // }, [title])
     
   return (
-    <Box  mt="100px" mb="100px">
-      <Link to="/wishlist">abc</Link>
+    <Box mb="100px">
+      <Link textAlign="start" to="/wishlist">Wishlist</Link>
     <Heading ml={"5%"} mb="10px">{title}</Heading>
     
     {/* {

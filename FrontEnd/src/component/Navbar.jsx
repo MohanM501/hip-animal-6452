@@ -82,7 +82,7 @@ useEffect(()=>{
   
   <MenuList>
    <Link> <MenuItem>USER LOGIN</MenuItem></Link>
-   <Link> <MenuItem>ADMIN LOGIN</MenuItem></Link>
+   <Link to="/admin/myaccount" ><MenuItem>ADMIN LOGIN</MenuItem></Link>
    
   </MenuList>
   </Menu>

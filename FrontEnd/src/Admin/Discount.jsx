@@ -21,6 +21,7 @@ import {useDispatch,useSelector} from "react-redux"
 import {getCoupon,postCoupon,deleteCoupon,patchCoupon} from "../Redux/CouponReducer/action"
 import { useEffect } from 'react';
 import { DeleteIcon } from '@chakra-ui/icons'
+import {useSearchParams} from "react-router-dom"
 
 
   const initState={
@@ -36,10 +37,24 @@ function Discount() {
   const dispatch=useDispatch()
   const data=useSelector((state)=>state.CouponReducer.coupons)
   const isLoading=useSelector((state)=>state.CouponReducer.isLoading)
+  const [searchParams, setSearchParams] = useSearchParams([]);
+  const [input,setInput]=useState("")
 
   useEffect(()=>{
-    dispatch(getCoupon)
-  },[])
+    const q = searchParams.get('q'||"") 
+      const queryParam = {
+        params: { 
+          q
+        }
+      }
+    dispatch(getCoupon(queryParam))
+  },[searchParams])
+
+
+  const handelSearch=()=>{
+    setSearchParams({q:input})
+    setInput("")
+  }
 
   const handleChange=(e)=>{
     const {name,value}=e.target;
@@ -68,8 +83,8 @@ function Discount() {
 
         <div className="action_div">
           <Flex border="1px solid grey" h="30px" p="3px" alignItems="center">
-            <Input variant='unstyled' size='sm' placeholder="Search Coupon Code" />
-            <button><AiOutlineSearch/></button>
+            <Input variant='unstyled' size='sm' placeholder="Search Coupon Code" onChange={(e)=>setInput(e.target.value)} />
+            <button onClick={handelSearch}><AiOutlineSearch/></button>
           </Flex>
           <Button bg="white" border="1px solid grey"  onClick={onOpen}>+ Add Coupon</Button>
           <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
@@ -91,6 +106,7 @@ function Discount() {
                 </ModalContent>
             </Modal>
         </div>
+            <Button mb="10px" onClick={()=>setSearchParams([])}>Reset All</Button>
 
 
         {isLoading?

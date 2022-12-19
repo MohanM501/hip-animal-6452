@@ -10,7 +10,7 @@ import Home from "../component/Home";
 import single from '../Pages/single';
 import MainCart from "../Mohan-Pages-2-checkout-cart/MainCart";
 import Navbar from '../component/Navbar';
-
+import CreateUser from "../Admin/AccountPage/CreateUser"
 // import Flutter from '../Components/Flutter';
 const MainRoute = () => {
   return (
@@ -27,6 +27,7 @@ const MainRoute = () => {
             <Route path="/:city/:applianceType/:productname" element={<ProductDetails/>}/>
             <Route path="/checkout/cart" element={<MainCart/>}/>
             <Route path='/admin/dashboard' element={<Dashboard />}></Route>
+            <Route path='/admin/myaccount' element={<CreateUser />}></Route>
         </Routes>
     </div>
   )
