@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import style from "styled-components"
 import FilterSort from '../../../Components/PackageComponents/FilterSort'
 import AllFurniture from '../../../Components/PackageComponents/AllFurniture'
+import {Box} from "@chakra-ui/react"
+import Navbar from '../../../component/Navbar'
+import Footer from '../../../component/Footer'
+
 const Furniture = () => {
   const[val,setval]=useState(0)
 
@@ -15,6 +19,8 @@ const Furniture = () => {
 
 
   return (
+      <Box mt="90px">
+        <Navbar/>
     <Wrapper>
         <WrapperFilterSort>
             <FilterSort slideval={slideval}/>
@@ -23,6 +29,8 @@ const Furniture = () => {
             <AllFurniture getval={val}/>
         </WrapperMusicAlbums>
     </Wrapper>
+    <Footer/>
+      </Box>
   )
 }
 

@@ -1,14 +1,15 @@
 // import {useEffect,useState} from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Box, Button, Center, Grid, GridItem, Image, Input,Text, InputGroup, InputRightElement, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Select, Stack, Menu, MenuButton, MenuList, MenuItem  } from '@chakra-ui/react';
+import { Box, Button, Center, Grid, GridItem, Image, Input,Text, InputGroup, InputRightElement, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Select, Stack, Menu, MenuButton, MenuList, MenuItem, Flex  } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import logo from "../assets/logo.png"
 
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { State } from "../Redux/City/action";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon} from "@chakra-ui/icons";
 
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Navbar = () => {
 const dispatch=useDispatch()
@@ -75,14 +76,14 @@ useEffect(()=>{
       pointerEvents='none'
       children={<i class="fa-sharp fa-solid fa-magnifying-glass"></i>}
     /> */}
-    <Link to='/'><strong>Cart</strong></Link>
+    <Link to='/'><strong><Flex ><AiOutlineShoppingCart mt='80px'/>Cart</Flex></strong></Link>
       <Menu>
   <MenuButton border='1px solid orange' bg="white" as={Button} rightIcon={<ChevronDownIcon />}>LOGIN/SIGNIN</MenuButton>
     
   
   <MenuList>
    <Link> <MenuItem>USER LOGIN</MenuItem></Link>
-   <Link> <MenuItem>ADMIN LOGIN</MenuItem></Link>
+   <Link to="/admin/myaccount" ><MenuItem>ADMIN LOGIN</MenuItem></Link>
    
   </MenuList>
   </Menu>

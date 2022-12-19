@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
+import {useParams} from "react-router-dom"
 import "./ProdDetails.css";
 const ProdDetails = () => {
 
   const [roundNo, setRoundNo] = useState(1);
+  const params = useParams();
+  const {  productname } = params;
+
   const round = new Array(5).fill("");
   const images = [
     "https://p.rmjo.in/productSquare/8ek5igur-500x500.jpg",
@@ -17,7 +21,7 @@ const ProdDetails = () => {
     setRoundNo(ind);
   }
   const gt = ">";
-  const nameOfProduct = "name of the product";
+  const nameOfProduct = productname;
   const paragraph = "Say goodbye to clutter with Stowy 2-Door Wardrobe. The Stowy Wardrobe is your best buddy for all those unexpected visits from your folks and impromptu sleepovers. With varying shelf sizes and utilitarian drawers, Stowy wardrobe ensures that your bedroom will always stay uncluttered and organized—just the way you like it.";
   const size = `29"L x 19"B x 73"H`;
   const material = "engineering wood";

@@ -51,9 +51,8 @@ function Product() {
           page:page
         }
       }
-    dispatch(getAll(queryParam))
-  },[searchParams,page])
-
+      dispatch(getAll(queryParam))
+    },[searchParams,page])
 
   const handleChange=(e)=>{
     const {name,value}=e.target;
