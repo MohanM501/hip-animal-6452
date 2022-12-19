@@ -23,6 +23,7 @@ const ProductCart = () => {
     //     count: 1
     // }]
     const [products,setProducts]=useState([]);
+    
     const dispatch=useDispatch();
    
     const product=getLocalData("cart_products")||[];
