@@ -13,8 +13,10 @@ import p5 from "../assets/p5.png"
 import {TbCurrencyRupee} from "react-icons/tb"
 import {useDispatch,useSelector} from "react-redux"
 import {getAll} from "../Redux/AdminReducer/action"
-import { Getfurniturn } from "../Redux/Product/action";
-// import {} from 'react'
+import Navbar from "./Navbar";
+import Footer from "./Footer"
+import {Link} from "react-router-dom"
+
 const flickityOptions = {
     cellAlign: 'left'
 }
@@ -25,14 +27,6 @@ const Home = () => {
     const dispatch=useDispatch();
     const data=useSelector((state)=>state.AdminReducer.products);
     const productdata=useSelector((state)=>state.Product.furniture);
-
-useEffect(()=>{
-    dispatch(Getfurniturn())
-    
-},[])
-    console.log(productdata)
-
-
    
 
     useEffect(()=>{
@@ -41,13 +35,16 @@ useEffect(()=>{
   return (
     
     <Box >
+        <Navbar/>
             <Slider/>
 
 
-           <Grid templateColumns='repeat(6,1fr)' h="150px" w="90%"   mt="90px" ml="90px" gap="15px">
+            <Grid templateColumns='repeat(6,1fr)' h="150px" w="90%"   mt="90px" ml="90px" gap="15px">
             <GridItem border="00.5px solid black" borderRadius="15px"  className='product' >
-                <Image    mt="18%" ml="35%" h="50px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAZlBMVEX///8AAAD8/Pzp6elbW1sTExPx8fGIiIj4+PjMzMwtLS3l5eW2trbd3d1YWFjX19dGRkZwcHCcnJw7OzvBwcFLS0skJCSBgYGsrKxnZ2eVlZUNDQ0ZGRlhYWFTU1MfHx94eHg0NDQxOw9tAAAFKElEQVRoge2a6ZKrKhCA3YWIcY24ZDHv/5JHpCEqOjGJMfdW0X+mJqAf0AtIt2Fo0aJFixYtWrS8JFZg/ZCeU9M0af4TtpcnppAk9/aF23l16Mnuye3/Hqrc3guO8qTooU1WhlZYZk3/X5Hk6Ptwi4hlP5UB/BaUJ6EI8lVzDIgjVH4eWx0qK2hwyJcUEZDruSfcuOrvaThq98iFt5+vJFh4x9vilQ7AjySwScxVfiRjuw/I8caHcCk39AhPXdww5cNpWjzua5ML9K22GUJQXvn7bu3YuDAFUB2Nn7BICy3X8kNFdM4lg4wfTltRDuuSTTkobwvRpDy2UqwgvfLgcgfDO5WKaQcpd73bZRoCu/h45yHqmr6xSQQ1uJrLgmtYcptvEjXYR5SP7kCnM+2G4ILd1C8pIkzFstNcDB37Qg+R0j8HhWfpdIGsXFhJlq5URFSD6u50YttixylUs0IlmP2JKFaP6R2em1rqjCDOaGKKZ6K5Dc7QhRhlpoEfc0qFp0NAmELESJ5tETY47+JihT6fTdFGU6tCuOXhJ/bDaVsIrvIsONvC3a6KLqVgUPe9VrogchWuP5ipnV7Fa1fwMzDoLsIv6ovAdGLVJb2U68G8cNuNUlD/mWar+BcDRW0mh7Dgu17NPd91lMOPFfr88RvFAp61ETIuq/gOI3q4hSdPfjhvNCiiPCpkVFG3h6u7KeXe9iZpOev5Rm+1DQyhXjBHL3eEtUwXIRDnlEZ60ot8JtiHYHCu8fwDXgnqdgbbE67PYu6Dx97gG8zhAND4cyHBYLEarKXF1nDZ4rpzx0G/9/jdG+UQMqrEFt4DJ2AKNYWxxH5ncIdN+OzRqD7IIcx6hE2kj3d7Uc3dZjM+kygtpCJmmnEN8OIRNjblG8NA1o4O+0jsgJ0Md+it+f2p5AjTTOCTxxbfI+YxbUcG/wU+e013KoOvru5skoPluexjyPB34DMJhdeDxHDM24tvsMAjTtqDw/6O/H4IHX10zN+Xbxiu6Y7+35lvdfxR7zHfLn7I98reUX/Dl9HY+QHfy6tCnDuGrfvwUzgVudX0YLYPH0Kx+h2yH/9Szh5UduCXbBNaunfYgW9EylF4X/6fvTVf8zVf8zVf8zVf8zVf8zX/v8kPnueKvsmPGpY9ffbuWb4VLJRjvMIn05uttfz+Wqz6mI/ElzT98zZ0woc7FzP+mG+wNFd/i/FX2nLEH9yAb8JnWZzk0K6bv51f4M4lwZvx2RD+7A18S1z4nB12J/0h//iki8K34CLW4Xcu1hLfOK7Mf87mF5b5Acu6VqVctnk+T6A/43ugxXop7zjDtwvz9nivFal8K6rvPGnwtCbEFsmsa/28bEHyD9DVCvq06Ijf/QaOkakJ4zmJaihbULOKi/z+wssWuRH66OKJlI27IvsvBfs3GIKaYJ7ls9oASEmcHyBbFs+sNin56kiULcTL5UwPvigByx7lGQGBAd3pKmNSROagi6WiLsk3xX2vUJhNnGL62ztDyCueTG1mq+uG/OZRhYjyBJ5S7oBfFyRqDcxWKb7hfBSzyjs5PJkLrMhGBYGPor/JKsj4K/SLZFXmxqWA3bYOZUZDfY73385e+NX7tuVvQoISimgyKioiBnwUQua7iT+tOlsWUYfVRbJwxA9F1Dy8XW+2UkTFmemyNHeff4tSiJen9GszHwjEeObbHdgVFS6nFfvFVoIi/1EYCGFvh+LboViYwqqb7kJJxNelP1K8vLNsKb+tf9eiRYsWLVq0/C/lHyBqR/HFgveKAAAAAElFTkSuQmCC" alt='img'/>
+            <Link to="/package">
+                <Image    mt="18%" ml="35%" h="50px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAZlBMVEX///8AAAD8/Pzp6elbW1sTExPx8fGIiIj4+PjMzMwtLS3l5eW2trbd3d1YWFjX19dGRkZwcHCcnJw7OzvBwcFLS0skJCSBgYGsrKxnZ2eVlZUNDQ0ZGRlhYWFTU1MfHx94eHg0NDQxOw9tAAAFKElEQVRoge2a6ZKrKhCA3YWIcY24ZDHv/5JHpCEqOjGJMfdW0X+mJqAf0AtIt2Fo0aJFixYtWrS8JFZg/ZCeU9M0af4TtpcnppAk9/aF23l16Mnuye3/Hqrc3guO8qTooU1WhlZYZk3/X5Hk6Ptwi4hlP5UB/BaUJ6EI8lVzDIgjVH4eWx0qK2hwyJcUEZDruSfcuOrvaThq98iFt5+vJFh4x9vilQ7AjySwScxVfiRjuw/I8caHcCk39AhPXdww5cNpWjzua5ML9K22GUJQXvn7bu3YuDAFUB2Nn7BICy3X8kNFdM4lg4wfTltRDuuSTTkobwvRpDy2UqwgvfLgcgfDO5WKaQcpd73bZRoCu/h45yHqmr6xSQQ1uJrLgmtYcptvEjXYR5SP7kCnM+2G4ILd1C8pIkzFstNcDB37Qg+R0j8HhWfpdIGsXFhJlq5URFSD6u50YttixylUs0IlmP2JKFaP6R2em1rqjCDOaGKKZ6K5Dc7QhRhlpoEfc0qFp0NAmELESJ5tETY47+JihT6fTdFGU6tCuOXhJ/bDaVsIrvIsONvC3a6KLqVgUPe9VrogchWuP5ipnV7Fa1fwMzDoLsIv6ovAdGLVJb2U68G8cNuNUlD/mWar+BcDRW0mh7Dgu17NPd91lMOPFfr88RvFAp61ETIuq/gOI3q4hSdPfjhvNCiiPCpkVFG3h6u7KeXe9iZpOev5Rm+1DQyhXjBHL3eEtUwXIRDnlEZ60ot8JtiHYHCu8fwDXgnqdgbbE67PYu6Dx97gG8zhAND4cyHBYLEarKXF1nDZ4rpzx0G/9/jdG+UQMqrEFt4DJ2AKNYWxxH5ncIdN+OzRqD7IIcx6hE2kj3d7Uc3dZjM+kygtpCJmmnEN8OIRNjblG8NA1o4O+0jsgJ0Md+it+f2p5AjTTOCTxxbfI+YxbUcG/wU+e013KoOvru5skoPluexjyPB34DMJhdeDxHDM24tvsMAjTtqDw/6O/H4IHX10zN+Xbxiu6Y7+35lvdfxR7zHfLn7I98reUX/Dl9HY+QHfy6tCnDuGrfvwUzgVudX0YLYPH0Kx+h2yH/9Szh5UduCXbBNaunfYgW9EylF4X/6fvTVf8zVf8zVf8zVf8zVf8zX/v8kPnueKvsmPGpY9ffbuWb4VLJRjvMIn05uttfz+Wqz6mI/ElzT98zZ0woc7FzP+mG+wNFd/i/FX2nLEH9yAb8JnWZzk0K6bv51f4M4lwZvx2RD+7A18S1z4nB12J/0h//iki8K34CLW4Xcu1hLfOK7Mf87mF5b5Acu6VqVctnk+T6A/43ugxXop7zjDtwvz9nivFal8K6rvPGnwtCbEFsmsa/28bEHyD9DVCvq06Ijf/QaOkakJ4zmJaihbULOKi/z+wssWuRH66OKJlI27IvsvBfs3GIKaYJ7ls9oASEmcHyBbFs+sNin56kiULcTL5UwPvigByx7lGQGBAd3pKmNSROagi6WiLsk3xX2vUJhNnGL62ztDyCueTG1mq+uG/OZRhYjyBJ5S7oBfFyRqDcxWKb7hfBSzyjs5PJkLrMhGBYGPor/JKsj4K/SLZFXmxqWA3bYOZUZDfY73385e+NX7tuVvQoISimgyKioiBnwUQua7iT+tOlsWUYfVRbJwxA9F1Dy8XW+2UkTFmemyNHeff4tSiJen9GszHwjEeObbHdgVFS6nFfvFVoIi/1EYCGFvh+LboViYwqqb7kJJxNelP1K8vLNsKb+tf9eiRYsWLVq0/C/lHyBqR/HFgveKAAAAAElFTkSuQmCC"/>
                 <Text ml="30%">Packages</Text>
+            </Link>
             </GridItem>
 
             <GridItem border="00.5px solid black" borderRadius="15px"   className='product'>
@@ -357,7 +354,7 @@ happy subscribers<br/>______</strong><br/>Here's what they have to say about the
 
 
 
-            
+          <Footer/>  
     </Box>
     
   )

@@ -32,7 +32,7 @@ const ProdDetails = () => {
     <div className="prod-container">
       <div className="first-sect">
         <div>
-          <img src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png" alt="some-log" />
+          <img src="https://raw.githubusercontent.com/MohanM501/hip-animal-6452/fp05_288_day-4/FrontEnd/src/Mohan-Pages-1/Mohan-images/virusSafetyGreen.webp" alt="some-log" />
         </div>
         <div>Safety precautions during COVID-19. We’re taking additional steps and precautionary measures to protect our community from COVID-19.</div>
         <div>Know more {gt}</div>

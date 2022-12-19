@@ -19,11 +19,16 @@ import {
     AvatarBadge
   } from '@chakra-ui/react'
 import Report from './Report';
+import {Link } from 'react-router-dom';
 
 
 function Dashboard() {
     const [value,setValue]=useState("Products")
+    let token=JSON.parse(sessionStorage.getItem("data"))
 
+    const handleLogOut=()=>{
+      sessionStorage.clear()
+    }
 
   return (
     <>
@@ -86,9 +91,9 @@ function Dashboard() {
         </Stack>
             </MenuButton>
             <MenuList>
-                <MenuItem>Masum</MenuItem>
-                <MenuItem>Email</MenuItem>
-                <MenuItem>LogOut</MenuItem>
+                <MenuItem>{token.name}</MenuItem>
+                <MenuItem>{token.email}</MenuItem>
+                <MenuItem onClick={handleLogOut}><Link to="/">Log Out</Link></MenuItem>
             </MenuList>
         </Menu>
         </div>

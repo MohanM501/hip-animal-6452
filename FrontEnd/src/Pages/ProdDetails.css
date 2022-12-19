@@ -2,7 +2,6 @@
 .prod-container{
     width:90%;
     margin: auto;
-    
 }
 .first-sect{
     width:100%;
@@ -30,13 +29,12 @@
 }
 .border-below{
     border-top:4px solid red;
-   
     width:10%;
 }
 
 .actual-prod{
     display: flex;
-    border: 0px solid green;
+    border: 1px solid green;
     gap:30px;
 }
 .slider-image{
@@ -46,7 +44,7 @@
 }
 .round-container{
     display: flex;
-    border:0px solid yellow;
+    border:1px solid yellow;
     
     justify-content: space-around;
     position: relative;

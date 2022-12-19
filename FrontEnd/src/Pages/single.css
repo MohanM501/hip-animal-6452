@@ -12,13 +12,12 @@
         display: flex;
         justify-content: space-between;
         gap:8px;
-        border: 0px solid red;
+        border: 1px solid red;
         padding:20px;
     }
     .left-side{
        
         width:70%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .why_rent{
         display: flex;
@@ -28,33 +27,20 @@
     }
     .show-border1, .show-border2{
         padding: 15px;
-        border:0px solid green;
+        border:1px solid green;
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
         
     }
-    .hide-border1,.hide-border2{
+    .hide-border{
         border-bottom:1px solid white;
         border-top: 4px solid red;
-        
         align-self: center;
         padding: 15px;
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
-    }
-    .hide-border1{
-        border-right: 1px solid gray;
-    }
-    .hide-border2{
-        border-left: 1px solid gray;
-    }
-    .show-border1{
-        border-bottom: 1px solid gray;
-    }
-    .show-border2{
-        border-bottom: 1px solid gray;
     }
     .why_rent div{
         width:100%;
@@ -70,8 +56,7 @@
         height: 600px;
         position: sticky;
         top:0px;
-        border: 0px solid green;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid green;
         
     }
     .right-side div:nth-child(1){
@@ -99,7 +84,7 @@
         flex-direction: column;
         justify-content: center;
         
-        border: 0px solid yellow;
+        border: 1px solid yellow;
     }
     .slider {
         -webkit-appearance: none; 
@@ -107,7 +92,7 @@
         width:85%;
         align-self: center;
         height: 25px;
-        border: 0px solid blue;
+        border: 1px solid blue;
         background-color: gray;
         cursor: pointer;
     }
@@ -117,7 +102,7 @@
         width:25px;
         height: 25px;
         border-radius: 50%;
-        border: 4px solid red;
+        border: 5px solid red;
     }
     .slider-bottom{
         display: flex;
@@ -140,7 +125,7 @@
     .month-refund{
         width: 100%;
         display: flex;
-        border: 0px solid blue;
+        border: 1px solid blue;
         justify-content: center;
         margin-top: 20px;
      
@@ -184,13 +169,13 @@
    }
     .month-below-parent{
         display: flex;
-        border: 0px solid brown;
+        border: 1px solid brown;
         justify-content: center;
         
     }
     .month-below-div{
         width: 90%;
-        border: 1px solid gray;
+        border: 1px solid green;
         display: grid;
         grid-template-columns: repeat(auto-fit,80px);
        
@@ -199,7 +184,7 @@
         display: flex;
         font-size: 12px;
         width: 100%;
-        border: 1px solid white;
+        border: 1px solid brown;
         text-align: left; 
         gap:5px;
         padding:10px 0px 10px 0px;
@@ -266,12 +251,10 @@
      }
      .left-side{
          width:100%;
-         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
      .right-side{
          width:100%;
          height: auto;
-         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
      }
      .show-border1,.show-border2{
          font-size: 16px;    
@@ -289,12 +272,10 @@
     }
     .left-side{
         width:100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .right-side{
         width:100%;
         height: auto;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
 

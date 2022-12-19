@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import {BsFillHeartFill} from "react-icons/bs"
 import { addtowishlist, Getfurniturn } from '../../Redux/Package/action'
+import single from '../../Pages/single'
 const AllFurniture = ({getval}) => {
    
 const dispatch=useDispatch()
@@ -55,6 +56,12 @@ const handleFilter=(el)=>{
 console.log(wish,"wh")  
   
   
+const handlesingle=(el)=>{
+  <single data={el}/>
+
+
+}
+
   // console.log("cat",category)
   
   
@@ -106,8 +113,8 @@ console.log(wish,"wh")
     // }, [title])
     
   return (
-    <Box  mt="100px" mb="100px">
-      <Link to="/wishlist">abc</Link>
+    <Box mb="100px">
+      <Link textAlign="start" to="/wishlist">Wishlist</Link>
     <Heading ml={"5%"} mb="10px">{title}</Heading>
     
     {/* {
@@ -126,7 +133,7 @@ console.log(wish,"wh")
 
                 return(
                     <div>
-                    <Box className='package'  >    
+                    <Box className='package' onClick={()=>handlesingle(el)}>    
                     <GridItem mb="40px" w="100%" h="100%"  >
                         <Flex>
                         <Image mb="60px" src={el.image}/>

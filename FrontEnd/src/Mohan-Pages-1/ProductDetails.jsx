@@ -5,6 +5,7 @@ import { Button } from "@chakra-ui/react";
 import "./ProductDetails.css";
 import WhyRent from './WhyRent';
 import ProdDetails from './ProdDetails';
+import { getLocalData, SaveData } from './Utils-Cart/LocalStorageData';
 
 
 const ProductDetails = () => {
@@ -71,10 +72,15 @@ const ProductDetails = () => {
           SetProduct(true);
         }
   }
-
+  const TopImage="https://p.rmjo.in/moodShot/qpaqpi6f-1024x512.jpg" ;
   const GotoCart=()=>{
       console.log("goto");
-      alert("Product has been added to the cart")
+      alert("Product has been added to the cart");
+      let products_data=getLocalData("cart_products")||[];
+      let new_data=[...products_data,{img:TopImage,count:1,name: productname,
+      rent: monthlyrent,
+      deposit: refundable_amount}]
+      SaveData("cart_products",new_data)
       navigate("/checkout/cart");
   }
 
@@ -84,10 +90,10 @@ const ProductDetails = () => {
     <div className="product-details-main" >
       <div className="middle-section">
         <div className="left-side">
-          <img src="https://p.rmjo.in/moodShot/qpaqpi6f-1024x512.jpg" alt="topImage" />
+          <img src={TopImage} alt="topImage" />
           <div className='why_rent'>
-            <div className={product?"show-border1":"hide-border"} onClick={()=>handleProduct(false)}>Why Rent from US</div>
-            <div className={product?"hide-border":"show-border2"} onClick={()=>handleProduct(true)}>Product Details</div>
+            <div className={product?"show-border1":"hide-border1"} onClick={()=>handleProduct(false)}>Why Rent from US</div>
+            <div className={product?"hide-border2":"show-border2"} onClick={()=>handleProduct(true)}>Product Details</div>
           </div>
           <div className={product?"hide-why":"show-why"}>
             <WhyRent/>

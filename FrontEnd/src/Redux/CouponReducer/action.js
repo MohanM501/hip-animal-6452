@@ -1,9 +1,10 @@
 import axios from "axios"
 import * as types from "./actionType"
 
-const getCoupon=(dispatch)=>{
+const getCoupon=(query)=>(dispatch)=>{
+    console.log(query)
     dispatch(({type:types.GET_COUPON_REQUEST}))
-    axios.get(`https://victorious-shoe-frog.cyclic.app/discount`)
+    axios.get(`https://victorious-shoe-frog.cyclic.app/discount`,query)
     .then((res)=>{
             dispatch(({
                 type:types.GET_COUPON_SUCCESS,
@@ -25,7 +26,7 @@ const getCoupon=(dispatch)=>{
                     payload:res.data
                 }))
                 alert("Coupon Added")
-                dispatch(getCoupon)
+                dispatch(getCoupon())
             })
             .catch((err)=>{
                 console.log(err)
@@ -42,7 +43,7 @@ const getCoupon=(dispatch)=>{
                         payload:res.data
                     }))
                     alert("Coupon Deleted Successfully")
-                    dispatch(getCoupon)
+                    dispatch(getCoupon())
                 })
                 .catch((err)=>{
                     console.log(err)
@@ -58,7 +59,7 @@ const getCoupon=(dispatch)=>{
                             type:types.EDIT_COUPON_SUCCESS,
                             payload:res.data
                         }))
-                        dispatch(getCoupon)
+                        dispatch(getCoupon())
                     })
                     .catch((err)=>{
                         console.log(err)
