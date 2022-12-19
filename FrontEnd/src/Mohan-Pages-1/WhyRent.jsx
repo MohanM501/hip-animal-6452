@@ -60,7 +60,7 @@ const WhyRent = () => {
       {
         relocateImages.length > 0 && relocateImages.map((item, index) => {
           return (
-            <div className='relocate'>
+            <div key={index} className='relocate'>
               <div className="relocate-img">
                 <img src={item} alt="relocate-images" />
               </div>

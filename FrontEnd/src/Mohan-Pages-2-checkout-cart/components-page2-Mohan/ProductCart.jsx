@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import { getLocalData,SaveData} from '../../Mohan-Pages-1/Utils-Cart/LocalStorageData';
 import styles from "./ProductCart.module.css";
+import { useDispatch } from 'react-redux';
+import { user_post_local } from '../../Redux/MohanReduxLocal/action';
 const { prod_container,prod_image_name,second_part,name_delete,rent_deposit,bottom_cart,count,Minus_Plus,cartNo} = styles;
 
 
@@ -21,6 +23,8 @@ const ProductCart = () => {
     //     count: 1
     // }]
     const [products,setProducts]=useState([]);
+    
+    const dispatch=useDispatch();
    
     const product=getLocalData("cart_products")||[];
     
@@ -37,6 +41,7 @@ const ProductCart = () => {
             console.log(not_deleted,"not deleted")
             SaveData("cart_products",not_deleted);
             setProducts(not_deleted);
+            dispatch(user_post_local(not_deleted))
     }
 
     const handleEdit=(ind,val)=>{
@@ -56,6 +61,7 @@ const ProductCart = () => {
             console.log(edited,"edited");
             SaveData("cart_products",edited);
             setProducts(edited);
+            dispatch(user_post_local(edited))
     }
     
     return (
@@ -74,11 +80,11 @@ const ProductCart = () => {
                                     <div className={rent_deposit}>
                                         <div>
                                             <div>Rent</div>
-                                            <div>₹{item.rent}</div>
+                                            <div>₹{item.rent*item.count}/mo</div>
                                         </div>
                                         <div>
                                             <div>Deposit</div>
-                                            <div>₹{item.deposit}</div>
+                                            <div>₹{item.deposit*item.count}</div>
                                         </div>
 
                                     </div>

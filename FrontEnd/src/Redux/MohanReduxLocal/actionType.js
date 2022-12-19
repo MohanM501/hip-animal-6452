@@ -1,0 +1,1 @@
+export const POST_ARRAY_LOCAL='POST_ARRAY_LOCAL';

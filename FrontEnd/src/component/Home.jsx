@@ -26,7 +26,7 @@ const Home = () => {
 
     const dispatch=useDispatch();
     const data=useSelector((state)=>state.AdminReducer.products);
-    const productdata=useSelector((state)=>state.Product.furniture);
+    //  const productdata=useSelector((state)=>state.Product.furniture)
    
 
     useEffect(()=>{
