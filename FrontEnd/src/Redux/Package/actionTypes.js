@@ -9,3 +9,6 @@ export const GET_furniture_FAILURE = "GET_furniture_FAILURE";
 
 export const GET_Upadte_Title_REQUEST = "GET_Upadte_Title_REQUEST";
 export const GET_Upadte_Title_SUCCESS = "GET_Upadte_Title_SUCCESS";
+
+export const GET_wishlist_REQUEST = "GET_wishlist_REQUEST";
+export const GET_wishlist_SUCCESS = "GET_wishlist_SUCCESS";

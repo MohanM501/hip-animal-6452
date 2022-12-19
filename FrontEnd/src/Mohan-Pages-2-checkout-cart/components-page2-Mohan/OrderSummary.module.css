@@ -1,0 +1,59 @@
+.orderSummary{
+    border:0px solid red;
+    background-color: whitesmoke;
+}
+
+.firstline{
+    padding:20px;
+    display: flex;
+    gap:10px;
+}
+
+.payable{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+    gap:20px;
+}
+
+.payableNow{
+    width:50%;
+    border: 0px solid blue;
+    padding:20px;
+}
+
+.payableMonthly{
+    width:50%;
+    border: 0px solid blueviolet;
+    padding:20px;
+}
+
+.refundable{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.button_proceed{
+    margin-top: 10px;
+    width: 80%;
+    
+    border: 1px solid green;
+    background-color: red;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_proceed div:last-child{
+     align-self:center
+}
+
+.payableMonthly>div:last-child{
+    margin-top: 20px;
+}
+.pay_head{
+    padding:10px 0px 10px 0px;
+}
+
+

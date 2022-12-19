@@ -1,21 +1,24 @@
 // import {useEffect,useState} from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Box, Button, Center, Grid, GridItem, Image, Input,Text, InputGroup, InputRightElement, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Select, Stack  } from '@chakra-ui/react';
-import React, { useEffect } from 'react'
+import { Box, Button, Center, Grid, GridItem, Image, Input,Text, InputGroup, InputRightElement, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Select, Stack, Menu, MenuButton, MenuList, MenuItem  } from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react'
 import logo from "../assets/logo.png"
 
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { State } from "../Redux/City/action";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 
 const Navbar = () => {
 const dispatch=useDispatch()
+const [city,setCity]=useState("Location")
+
 const data =useSelector((state)=>
     state.City.City
 )
 const location =useLocation()
-console.log(data)
+ console.log(data)
 useEffect(()=>{
     if(location.search||data.length===0){
       dispatch(State)
@@ -25,30 +28,30 @@ useEffect(()=>{
 
  
   return (
-   <box >
+   <Box   className='navbar' w='100%' bg="white" mt='-90px'>
     <Center boxShadow='md'  p="10px"  display="Flex"  gap='12' bgColor="" className='nav'  h="60px">
-    <Link to='/'> <Image sizes='92*36' htmlHeight={36} htmlWidth={92}
+    <Link to='/'> <Image sizes='92*36' htmlHeight={60} htmlWidth={150}
     // boxSize={}
     src={logo}
     alt='logo'/></Link>
  
 
 
- <Popover placement='top-start' >
-  <PopoverTrigger >
-    <Button>Click me</Button>
+ <Popover placement='top-start' className="pop">
+  <PopoverTrigger  >
+    <Button bg="white">{city}</Button>
   </PopoverTrigger>
-  <PopoverContent w="1000px" m="center">
-  <Input  mt="40px" w="99%" m="center" type='text' placeholder=''  outline="none" border="1px solid black" borderRadius='10px' />
+  <PopoverContent w="1000px" m="center" className="poop">
+  <Input  mt="40px" w="99%" m="center" textAlign="center" type='text' placeholder=''  outline="none" border="1px solid black" borderRadius='10px' />
     <PopoverArrow />
     <PopoverCloseButton />
     <PopoverBody >
-          <Grid templateColumns='repeat(8,1fr)' h="300px"  >
+          <Grid templateColumns='repeat(8,1fr)' h="300px"  textAlign="center"  >
             
               {data && data.length>0 && data.map((el)=>{
-                return (<Box>
-                    <Image src={el.image}/>
-                      <Text> {el.name}</Text>
+                return (<Box onClick={()=>setCity(el.name)} >
+                   <Link> <Image src={el.image}/>
+                      <Text> {el.name}</Text></Link>
                 </Box>)
               })}
            
@@ -60,7 +63,7 @@ useEffect(()=>{
 
 <Stack spacing={4}  w="500px"  flexDir="row" _focus={{ outline:"none", border:"none"}} justfy="center" gap="5px" align="center" border="1px solid black" borderRadius="16px">
     
-    <Input type='text' placeholder=''  outline="none" border="none" />
+    <Input  type='text' placeholder=''  outline="none" border="none" />
   
   <Button  background="none" outline="none"   onClick ={()=>alert("click")}  mt="10px"> <i class="fa-sharp fa-solid fa-magnifying-glass" /></Button>
   </Stack>
@@ -72,10 +75,22 @@ useEffect(()=>{
       pointerEvents='none'
       children={<i class="fa-sharp fa-solid fa-magnifying-glass"></i>}
     /> */}
-    <Link to='/cart'><strong>Cart</strong></Link>
-    <Link to='/login'><Button  color='black'>LOGIN|SIGNUP</Button></Link>
-      </Center>
-   </box>
+    <Link to='/'><strong>Cart</strong></Link>
+      <Menu>
+  <MenuButton border='1px solid orange' bg="white" as={Button} rightIcon={<ChevronDownIcon />}>LOGIN/SIGNIN</MenuButton>
+    
+  
+  <MenuList>
+   <Link> <MenuItem>USER LOGIN</MenuItem></Link>
+   <Link to="/admin/myaccount" ><MenuItem>ADMIN LOGIN</MenuItem></Link>
+   
+  </MenuList>
+  </Menu>
+
+
+  </Center> 
+
+   </Box>
           
      );
 };

@@ -3,17 +3,33 @@ import { useSearchParams } from 'react-router-dom';
 import {ChevronDownIcon} from "@chakra-ui/icons"
 import {FiFilter} from "react-icons/fi"
 import { Image,Box, Heading, Menu, MenuButton, MenuItem, MenuList,Button, Grid, GridItem, Text } from '@chakra-ui/react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import FLutterSlider from "./FlutterSlider"
-const FilterSort = () => {
+import {CheckCircleIcon} from "@chakra-ui/icons"
+import { Getfurniturn } from '../../Redux/Package/action';
+const FilterSort = ({slideval}) => {
+
  
-  
+    const {title}=useSelector((state)=>{return {title:state.Package.title}})
+    const Title=title
+    const dispatch=useDispatch()
   const [searchParams,setsearchParams]=useSearchParams();
   const [category,setcategory]=useState(searchParams.getAll("genre")||[])
   const [sortBy,setSortBy]=useState(searchParams.getAll('sortBy')||[])
   const icon=useSelector((state)=>state.Package.package)
   const icontype=useSelector((state)=>state.Packagetype.packagetype)
   console.log(icon)
+
+  const handle=(title)=>{
+    
+    console.log(title,"yes")
+    dispatch(Getfurniturn(title))
+  }
+
+
+
+
+
   // console.log(searchParams.getAll("genre") ||[]);
   
 //   const handleFilter=(e)=>{
@@ -42,7 +58,7 @@ const FilterSort = () => {
   },[category,setsearchParams,sortBy])
 
 
-  console.log("ass",category)
+//   console.log("ass",category)
   
   
 
@@ -75,8 +91,9 @@ const FilterSort = () => {
       </Menu>
       </Box>
       </div>
-      <Box mt="30px" h="50px" textAlign={"center"} border={"2px solid lightblue"}>
-      <FLutterSlider mt="20px"/>
+      <Box mt="30px" h="70px" w="230px" textAlign={"center"} border={"2px solid lightblue"}>
+        <Heading size={"sm"} mb="10px" mt="2px" >CHOOSE RENTAL TENURE</Heading>
+      <FLutterSlider mt="20px" slideval={slideval}/>
       
       </Box>
       <Text pt="20px">Choose by Room Type</Text>
@@ -85,14 +102,25 @@ const FilterSort = () => {
         {
             icon && icon.length>0  && icon.map((el)=>{
                 return(
-                    <GridItem h="auto" w="80px" borderRadius={"10%"} textAlign={"center"} justifyContent={"center"} border={"1px "} color="black" >
-                        <Image w="50%" m="20px" src={el.icon}></Image>
-                        <Text fontSize={"15px"}>{el.type}</Text>
-                        <Text fontSize={"13px"}>{el.No_of_package}</Text>
-
-
+                    el.title===Title?
+                    <GridItem onClick={()=>handle(el.title)} h="auto" w="80px" borderRadius={"5%"}  textAlign={"center"} justifyContent={"center"} border={"1px solid red"} color="blue" >
+                    <div style={{display:"flex"}}>
+                                            
+                    <Image w="50%" ml="10px" mt="20px" src={el.icon}></Image>
+                    <CheckCircleIcon m="10px"/>   
+                    </div>
+                    <Text fontSize={"15px"}>{el.type}</Text>
+                    <Text fontSize={"13px"}>{el.No_of_package}</Text>
+                    
+                    </GridItem>:
+                    <GridItem onClick={()=>handle(el.title)} h="auto" w="80px" borderRadius={"10%"} textAlign={"center"} justifyContent={"center"} border={"1px "} color="black" >                           
+                    <Image w="50%" m="20px" src={el.icon}></Image>
+                    <Text fontSize={"15px"}>{el.type}</Text>
+                    <Text fontSize={"13px"}>{el.No_of_package}</Text>
                     </GridItem>
-                )
+
+                    
+                    )
 
             })
         }
@@ -104,13 +132,22 @@ const FilterSort = () => {
         {
             icontype && icontype.length>0  && icontype.map((el)=>{
                 return(
-                    <GridItem h="auto" w="80px" borderRadius={"10%"} textAlign={"center"} justifyContent={"center"} border={"1px "} color="black" >
+                    el.title===Title?
+                    <GridItem onClick={()=>handle(el.title)} h="auto" w="80px" borderRadius={"5%"}  textAlign={"center"} justifyContent={"center"} border={"1px solid red"} color="blue" >
+                    <div style={{display:"flex"}}>
+                                            
+                    <Image w="50%" ml="10px" mt="20px" src={el.icon}></Image>
+                    <CheckCircleIcon m="10px"/>   
+                    </div>
+                    <Text fontSize={"15px"}>{el.type}</Text>
+                    <Text fontSize={"13px"}>{el.No_of_package}</Text>
+                    
+                    </GridItem>:
+                        <GridItem onClick={()=>handle(el.title)} h="auto" w="80px" borderRadius={"10%"} textAlign={"center"} justifyContent={"center"} border={"1px "} color="black" >
                         <Image w="50%" m="20px" src={el.icon}></Image>
                         <Text fontSize={"15px"}>{el.type}</Text>
                         <Text fontSize={"13px"}>{el.No_of_package}</Text>
-
-
-                    </GridItem>
+                        </GridItem>
                 )
 
             })
